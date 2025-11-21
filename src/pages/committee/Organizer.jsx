@@ -33,24 +33,10 @@ const sections = [
     ]
   },
   {
-    title: 'PROGRAM COMMITTEE',
-    items: [
-      'Dr Sangita Chaudhari, Professor, RAIT, Nerul, Navi Mumbai',
-      'Dr Vandana Patravale, Professor, Institute of Chemical Technology, Mumbai',
-      'Dr Varsha Patil, Professor, Matroshri COE, Nasik',
-      'Dr Sonali Patil, Professor, KJCE, SVU, Mumbai',
-      'Dr Hariram Chavan, Professor, KJSIT, UoM, Mumbai',
-      'Dr Pooja Raundale, Professor, CoE, UoM, Mumbai',
-      'Dr Namrata Ansari, Professor, KJSIT, UoM, Mumbai',
-      'Dr Priti Patil, Professor, D Y Patil IT, Akurdi, Pune',
-      'Mr. L C Patil, Deesan Tex Fab Pvt Ltd, Shirpur',
-    ]
-  },
-  {
     title: 'ADMINISTRATION',
     items: [
-      'Mr. Rahul Dande, Chief Accountant and Administrator, Shirpur Campus',
-      'Mr. Bhupesh Jaware, Deputy Registrar, Shirpur Campus'
+      'Mr. Shivaji Gaikwad, Administrative Officer, MPTP Shirpur Campus',
+      'Mr. Bhupesh Jaware, Deputy Registrar, MPTP Shirpur Campus'
     ]
   }
 ];
