@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Header from "../components/header";
+import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Ticker from "../components/Ticker";
 import Footer from "../components/Footer";
