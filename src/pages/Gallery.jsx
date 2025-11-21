@@ -24,7 +24,7 @@ const filenames = [
 const images = filenames
   .filter((f) => f && !f.startsWith("."))
   .map((f, i) => ({
-    src: `/gallery/${encodeURIComponent(f)}`,
+    src: `/Gallery/${encodeURIComponent(f)}`,
     title: f.replace(/\.[^.]+$/, ""),
     category: "Event",
     filename: f,
