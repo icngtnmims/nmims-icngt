@@ -1,51 +1,59 @@
 import React from "react";
 
+const MESSAGES = [
+  "Stay tuned for the updates",
+  // Add more messages here, e.g.:
+];
+
+const SEPARATOR = "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0"; // "      •      "
+
+// Build one long repeating string / node list separated by bullets
+// We tile enough copies so the track is much wider than the viewport.
+const REPEAT = 8;
+
+const tickerItems = Array.from({ length: REPEAT }, (_, i) =>
+  MESSAGES.map((msg, j) => (
+    <React.Fragment key={`${i}-${j}`}>
+      <span>{msg}</span>
+      <span aria-hidden="true">{SEPARATOR}</span>
+    </React.Fragment>
+  ))
+).flat();
+
 const Ticker = () => {
-  const messages = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    <span key="1">
-      Ut enim ad minim veniam,{" "}
-      <a
-        href="https://example.com"
-        className="underline text-white hover:text-yellow-200"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        visit our site
-      </a>
-      .
-    </span>,
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  ];
-
-  // Duplicate messages for seamless loop
-  const tickerContent = [...messages, ...messages];
-
   return (
-    <div className="bg-red-700 text-white py-2 sm:py-2.5 md:py-3 overflow-hidden h-10 sm:h-11 md:h-12 flex items-center relative">
-      <div className="flex animate-scroll">
-        {tickerContent.map((message, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 px-8 sm:px-12 md:px-16 text-sm sm:text-base whitespace-nowrap"
+    <div
+      className="bg-red-700 text-white py-2 sm:py-2.5 overflow-hidden flex items-center"
+      aria-label="Announcements ticker"
+    >
+      {/* Outer mask hides overflow cleanly on both edges */}
+      <div className="flex w-full overflow-hidden">
+        {/* scrollTrack moves from 0 → -50% so the second half
+            is identical to the first, giving a seamless loop */}
+        <div className="flex animate-ticker whitespace-nowrap will-change-transform">
+          {/* Two identical halves — when the first scrolls fully off-screen
+              the second takes its place and the animation loops invisibly */}
+          <span className="flex items-center text-sm sm:text-base px-4">
+            {tickerItems}
+          </span>
+          <span
+            className="flex items-center text-sm sm:text-base px-4"
+            aria-hidden="true"
           >
-            {typeof message === "string" ? <span>{message}</span> : message}
-          </div>
-        ))}
+            {tickerItems}
+          </span>
+        </div>
       </div>
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
+
+      <style>{`
+        @keyframes ticker {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
         }
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
+        .animate-ticker {
+          animation: ticker 18s linear infinite;
         }
-        .animate-scroll:hover {
+        .animate-ticker:hover {
           animation-play-state: paused;
         }
       `}</style>

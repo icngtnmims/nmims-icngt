@@ -7,12 +7,12 @@ const committeeGroups = [
       {
         name: "Shri Amrishbhai R. Patel",
         role: "Chancellor, SVKM's NMIMS & President, SVKM",
-        img: "/committee/amrishbhai-patel.png",
+        img: "/committee/amrishbhai-patel.webp",
       },
       {
         name: "Shri Bhupeshbhai R. Patel",
         role: "Joint President, SVKM",
-        img: "/committee/bhupeshbhai-patel.png",
+        img: "/committee/bhupeshbhai-patel.webp",
       },
     ],
   },
@@ -22,17 +22,17 @@ const committeeGroups = [
       {
         name: "Dr. Ramesh Bhat",
         role: "Vice Chancellor, SVKM’s NMIMS",
-        img: "/committee/ramesh-bhat-sir.jpg",
+        img: "/committee/ramesh-bhat-sir.webp",
       },
       {
         name: "Shri Rajgopal Bhandari",
         role: "Managing Committee Member, SVKM & Mentor, MPTP Shirpur Campus",
-        img: "/committee/Rajgopal-sir.jpg",
+        img: "/committee/Rajgopal-sir.webp",
       },
       {
         name: "Mrs. Rita Patel",
         role: "Incharge, NMIMS Shirpur Campus",
-        img: "/committee/rita-patel.png",
+        img: "/committee/rita-patel.webp",
       },
     ],
   },
@@ -42,12 +42,12 @@ const committeeGroups = [
       {
         name: "Dr. Sunita R Patil",
         role: "Director, SVKM’s NMIMS Shirpur Campus\nChairperson & Editor",
-        img: "/committee/shirpur-director.jpg",
+        img: "/committee/shirpur-director.webp",
       },
       {
         name: "Dr. Venkatadri Marriboyina",
         role: "Professor & Associate Dean, MPSTME Shirpur\nConvener & Co-Editor",
-        img: "/committee/Dr-Venkatadri-Marriboyina.jpeg",
+        img: "/committee/Dr-Venkatadri-Marriboyina.webp",
       },
     ],
   },

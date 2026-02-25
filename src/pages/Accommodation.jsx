@@ -133,12 +133,13 @@ const Accommodation = () => {
           </InfoCard>
 
           <div className="text-center mb-6">
-            <a
-              href="#"
-              className="btn bg-red-700 text-white hover:bg-red-800 border-red-700 text-base md:text-lg"
+            <button
+              disabled
+              className="btn bg-red-700 text-white border-red-700 text-base md:text-lg opacity-50 cursor-not-allowed"
             >
               Accommodation Request Form
-            </a>
+            </button>
+            <p className="text-xs text-gray-400 mt-1">* Will be available soon</p>
           </div>
         </section>
 

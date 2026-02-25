@@ -101,12 +101,13 @@ const Registration = () => {
           </div>
 
           <div className="text-center mb-6">
-            <a
-              href="#"
-              className="btn btn-outline text-sm md:text-base border-red-700 text-red-700 hover:bg-red-700 hover:text-white hover:border-red-700"
+            <button
+              disabled
+              className="btn btn-outline text-sm md:text-base border-red-700 text-red-700 opacity-50 cursor-not-allowed"
             >
               Download Group Registration Form
-            </a>
+            </button>
+            <p className="text-xs text-gray-400 mt-1">* Will be available soon</p>
           </div>
         </section>
 
@@ -186,12 +187,13 @@ const Registration = () => {
           </ul>
 
           <div className="text-center">
-            <a
-              href="#"
-              className="btn bg-red-700 text-white hover:bg-red-800 border-red-700 text-base md:text-lg"
+            <button
+              disabled
+              className="btn bg-red-700 text-white border-red-700 text-base md:text-lg opacity-50 cursor-not-allowed"
             >
               Register Now
-            </a>
+            </button>
+            <p className="text-xs text-gray-400 mt-1">* Will be available soon</p>
           </div>
         </section>
       </div>

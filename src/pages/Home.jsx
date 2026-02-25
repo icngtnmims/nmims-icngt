@@ -3,10 +3,10 @@ import Carousel from "../components/Carousel";
 
 const Home = () => {
   const campusImages = [
-    "/campus/campus-image.png",
-    "/campus/cf.png",
-    "/Gallery/Day 1 ICDTV 2030 - Group Photo.JPG",
-    "/Gallery/218A8523.JPG",
+    "/campus/campus-image.webp",
+    "/campus/cf.webp",
+    "/Gallery/Day 1 ICDTV 2030 - Group Photo.webp",
+    "/Gallery/218A8523.webp",
   ];
 
   return (
