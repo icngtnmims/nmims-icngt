@@ -42,9 +42,9 @@ const Home = () => {
             <p className="text-base md:text-lg">
               School of Pharmacy & Technology Management
             </p>
-            <p className="text-base md:text-lg">
+            {/* <p className="text-base md:text-lg">
               School of Agricultural Sciences & Technology
-            </p>
+            </p> */}
           </div>
 
           <div>
