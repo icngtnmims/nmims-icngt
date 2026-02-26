@@ -27,11 +27,11 @@ const Header = () => {
             alt="SPTM Shirpur"
             className="h-5 sm:h-8 md:h-10 object-contain"
           />
-          <img
+          {/* <img
             src="/logo/sast-shirpur.webp"
             alt="SAST Shirpur"
             className="h-5 sm:h-8 md:h-10 object-contain"
-          />
+          /> */}
         </div>
         {/* Right: NMIMS logo 2 */}
         <img

@@ -107,7 +107,7 @@ const AboutUs = () => (
           theoretical knowledge.
         </p>
       </section>
-      <section>
+      {/* <section>
         <h2 className="text-xl sm:text-2xl font-bold mb-2 text-red-700">
           School of Agricultural Sciences and Technology (SAST), Shirpur
         </h2>
@@ -119,7 +119,7 @@ const AboutUs = () => (
           boasts a 117-acre farm, advanced infrastructure, and notable
           achievements in placements, patents, and hackathons.
         </p>
-      </section>
+      </section> */}
     </div>
   </div>
 );

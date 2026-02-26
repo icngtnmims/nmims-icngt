@@ -6,7 +6,7 @@ const sections = [
     items: [
       'Dr. Venkatadri Marriboyina, Associate Dean, MPSTME, Shirpur',
       'Dr. Vijay Shivankar I/c Associate Dean, Centre for Textile Functions, Shirpur',
-      'Dr. Indraraj Singh, Associate Dean School of Agricultural Sciences & Technology, Shirpur'
+      // 'Dr. Indraraj Singh, Associate Dean School of Agricultural Sciences & Technology, Shirpur'
     ]
   },
   {
@@ -29,14 +29,14 @@ const sections = [
       'Dr. Ritesh Dhanare, HoD, IT, MPSTME',
       'Dr. Suresh Kurumbanshi, HoD, CE, MPSTME',
       'Dr. Govind Rajput, HoD, BSH, MPSTME',
-      'Dr. T. Krishna Chaitanya, SAST'
+      // 'Dr. T. Krishna Chaitanya, SAST'
     ]
   },
   {
     title: 'ADMINISTRATION',
     items: [
       'Mr. Shivaji Gaikwad, Administrative Officer, MPTP Shirpur Campus',
-      'Mr. Bhupesh Jaware, Deputy Registrar, MPTP Shirpur Campus'
+      // 'Mr. Bhupesh Jaware, Deputy Registrar, MPTP Shirpur Campus'
     ]
   }
 ];
