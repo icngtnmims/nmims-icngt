@@ -2,43 +2,39 @@ import React from "react";
 
 const sections = [
   {
-    title: 'CO-CONVENERS',
+    title: "CONFERENCE CHAIR",
     items: [
-      'Dr. Venkatadri Marriboyina, Associate Dean, MPSTME, Shirpur',
-      'Dr. Vijay Shivankar I/c Associate Dean, Centre for Textile Functions, Shirpur',
-      // 'Dr. Indraraj Singh, Associate Dean School of Agricultural Sciences & Technology, Shirpur'
-    ]
+      {
+        name: "Dr. Sunita Patil",
+        designation: "Director, SVKM's NMIMS, MPTP, Shirpur Campus",
+      },
+    ],
   },
   {
-    title: 'COORDINATORS',
+    title: "CONFERENCE CO-CHAIR",
     items: [
-      'Dr. G L Gupta, Professor, SPTM',
-      'Dr. Shashikant Bagade, Associate Professor, SPTM',
-      'Dr. Payal Dande, Assistant Professor, SPTM',
-      'Dr Preeti Sangave, Associate Professor, SPTM'
-    ]
+      {
+        name: "Dr. Venkatadri Marriboyina",
+        designation: "Associate Dean, SVKM's NMIMS, MPSTME, Shirpur Campus",
+      },
+    ],
   },
   {
-    title: 'ORGANIZING COMMITTEE',
-    items: [
-      'Dr Sankha Bhattacharya, HoD Pharmaceutics, SPTM',
-      'Dr Amit Page, HoD Pharm. Technology, SPTM',
-      'Dr. Ravindra Pingili, HoD Pharmacology, SPTM',
-      'Dr. Ranjit Shinde, HoD Pharm. Chemistry, SPTM',
-      'Dr. RadhaKrishna Rambola, HoD CS, MPSTME',
-      'Dr. Ritesh Dhanare, HoD, IT, MPSTME',
-      'Dr. Suresh Kurumbanshi, HoD, CE, MPSTME',
-      'Dr. Govind Rajput, HoD, BSH, MPSTME',
-      // 'Dr. T. Krishna Chaitanya, SAST'
-    ]
+    title: "CONVENORS",
+    items: [],
   },
   {
-    title: 'ADMINISTRATION',
-    items: [
-      'Mr. Shivaji Gaikwad, Administrative Officer, MPTP Shirpur Campus',
-      // 'Mr. Bhupesh Jaware, Deputy Registrar, MPTP Shirpur Campus'
-    ]
-  }
+    title: "COORDINATORS",
+    items: [],
+  },
+  {
+    title: "ORGANIZING COMMITTEE",
+    items: [],
+  },
+  {
+    title: "ADMINISTRATION",
+    items: [],
+  },
 ];
 
 const Organizer = () => {
@@ -48,16 +44,29 @@ const Organizer = () => {
         Program Organizing Committee
       </h1>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
         {sections.map((sec) => (
-          <div key={sec.title}>
-            <div className="bg-red-700 text-white font-bold px-4 py-2 rounded-t text-center">
+          <div key={sec.title} className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+            <div className="bg-red-700 text-white font-bold px-4 py-3 text-center text-sm sm:text-base uppercase tracking-wide">
               {sec.title}
             </div>
-            <div className="bg-white border rounded-b shadow-sm p-4 space-y-3">
-              {sec.items.map((it, idx) => (
-                <div key={idx} className="text-sm text-slate-700">{it}</div>
-              ))}
+            <div className="p-5 min-h-[5rem] flex flex-col justify-center">
+              {sec.items.length > 0 ? (
+                sec.items.map((it, idx) => (
+                  <div key={idx} className="text-center sm:text-left">
+                    <div className="font-bold text-slate-800 text-base sm:text-lg">
+                      {it.name}
+                    </div>
+                    <div className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                      {it.designation}
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="text-center text-slate-400 italic text-sm py-2">
+                  —
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -67,3 +76,4 @@ const Organizer = () => {
 };
 
 export default Organizer;
+
