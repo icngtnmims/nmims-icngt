@@ -105,10 +105,10 @@ const Contact = () => {
                 <span>
                   <strong>Email:</strong>{" "}
                   <a
-                    href="mailto:icngt2027@nmims.edu"
+                    href="mailto:icngt@nmims.edu"
                     className="hover:text-red-700"
                   >
-                    icngt2027@nmims.edu
+                    icngt@nmims.edu
                   </a>
                 </span>
               </p>
