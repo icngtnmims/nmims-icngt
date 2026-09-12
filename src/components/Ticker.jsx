@@ -44,19 +44,6 @@ const Ticker = () => {
           </span>
         </div>
       </div>
-
-      <style>{`
-        @keyframes ticker {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        .animate-ticker {
-          animation: ticker 18s linear infinite;
-        }
-        .animate-ticker:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </div>
   );
 };

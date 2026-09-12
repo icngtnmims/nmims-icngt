@@ -4,15 +4,32 @@
   themes: light;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes scroll {
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@keyframes ticker {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
+
+.animate-ticker {
+  animation: ticker 22s linear infinite;
+  will-change: transform;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
