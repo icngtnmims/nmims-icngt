@@ -50,41 +50,32 @@ const CallForPapers = () => {
     {
       number: "I",
       title:
-        "Intelligent Systems, Computing and Digital Transformation for Sustainability",
+        "AI in Intelligent Systems, Computing and Digital Transformation for Sustainability",
     },
     {
       number: "II",
       title:
-        "Clean Energy, Low-Carbon Engineering and Climate-Resilient Infrastructure ",
+        "AI in Clean Energy, Low-Carbon Engineering and Climate-Resilient Infrastructure",
     },
     {
       number: "III",
       title:
-        "Sustainable Agriculture, Food Systems and Bio-resource Innovation",
+        "AI in Sustainable Agriculture, Food Systems and Bio-resource Innovation",
     },
     {
       number: "IV",
       title:
-        "Pharmaceutical Sciences, Public Health Technologies and Community Well-being",
+        "AI in Pharmaceutical Sciences, Public Health Technologies and Community Well-being",
     },
     {
       number: "V",
-      title: "Circular Textiles, Eco-materials and Responsible Manufacturing",
+      title: "AI in Circular Textiles, Eco-materials and Responsible Manufacturing",
     },
     {
       number: "VI",
       title:
-        "Education, Policy, Ethics and Technology Governance for Sustainable Development ",
+        "AI in Education, Policy, Ethics and Technology Governance for Sustainable Development",
     },
-    // {
-    //   number: "VII",
-    //   title: "Technologies promoting Accessibility and Equity in education;",
-    // },
-    // {
-    //   number: "VIII",
-    //   title:
-    //     "Safety, Security and ethical use of digital technologies for Sustainable Societies;",
-    // },
   ];
 
   return (
