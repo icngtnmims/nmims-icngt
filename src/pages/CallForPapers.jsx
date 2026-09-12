@@ -95,7 +95,7 @@ const CallForPapers = () => {
 
       <div className="prose max-w-none">
         <p className="text-base md:text-lg mb-6 text-justify">
-          The ICNGT–2026 invites submissions of original, unpublished, and
+          The ICNGT–2027 invites submissions of original, unpublished, and
           high-quality scientific research contributions manifested as research
           articles, comprehensive review papers, and empirical research findings
           intended for both presentation and publication from scholars,
@@ -104,7 +104,7 @@ const CallForPapers = () => {
         </p>
 
         <p className="text-base md:text-lg mb-6 text-justify">
-          Contributions to ICNGT–2026 are expected to accentuate innovative
+          Contributions to ICNGT–2027 are expected to accentuate innovative
           insights, practical implementations, and the ramifications of advanced
           Next Generation Technologies on the enhancement of human quality of
           life, the promotion of sustainable development, and the resolution of

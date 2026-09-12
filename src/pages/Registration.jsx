@@ -33,7 +33,7 @@ const Registration = () => {
 
   const registrationRequirements = [
     "Online NEFT Payment Reference No. and Receipt",
-    'Transaction Photocopy with remarks as "ICNGT-2025"',
+    'Transaction Photocopy with remarks as "ICNGT-2027"',
   ];
 
   return (

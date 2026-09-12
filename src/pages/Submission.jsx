@@ -39,7 +39,7 @@ const Submission = () => {
     //       </h2>
 
     //       <p className="text-base md:text-lg mb-6 text-justify">
-    //         All full-length papers that receive acceptance at the ICNGT-2025
+    //         All full-length papers that receive acceptance at the ICNGT-2027
     //         Conference will be compiled in a conference proceeding published by
     //         Taylor and Francis (T&F) in both print and electronic formats, each
     //         possessing an ISBN for the book and a DOI for each respective

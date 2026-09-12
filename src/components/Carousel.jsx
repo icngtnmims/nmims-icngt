@@ -30,8 +30,8 @@ const Carousel = ({ images = [], autoPlayInterval = 3000 }) => {
   };
 
   return (
-  // fixed height carousel: change h-64/md:h-144 to taste
-  <div className="carousel w-full relative overflow-hidden h-64 md:h-144">
+    /* fixed height carousel: responsive scaling for mobile, tablet & desktop */
+    <div className="carousel w-full relative overflow-hidden h-48 sm:h-72 md:h-[28rem] lg:h-[34rem]">
       <div
         className="flex transition-transform duration-500 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}

@@ -1,43 +1,99 @@
 import React from "react";
-import InfoCard from "../components/ui/InfoCard";
+import { Calendar, FileText, CheckCircle, UploadCloud, Ticket, Clock, Award } from "lucide-react";
 
 const ImpDates = () => {
-  const dates = [
+  const timeline = [
     {
-      label: "Call for full length paper/ abstract submission:",
-      date: "To be announced soon",
+      event: "Paper Submission Deadline",
+      date: "15 November 2026",
+      icon: FileText,
+      badgeColor: "bg-amber-100 text-amber-800 border-amber-200",
     },
     {
-      label: "Deadline for full length paper/abstract submission:",
-      date: "To be announced soon",
+      event: "Acceptance Notification",
+      date: "5 December 2026",
+      icon: CheckCircle,
+      badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
     },
-    { label: "Acceptance of abstract:", date: "To be announced soon" },
-    { label: "Acceptance of full length paper:", date: "To be announced soon" },
     {
-      label: "Last date of Early Bird Registration:",
-      date: "To be announced soon",
+      event: "Camera Ready Paper Submission",
+      date: "21 December 2026",
+      icon: UploadCloud,
+      badgeColor: "bg-purple-100 text-purple-800 border-purple-200",
     },
-    { label: "Last date of Registration:", date: "To be announced soon" },
-    { label: "Conference Dates:", date: "To be announced soon" },
+    {
+      event: "Early-Bird Registration",
+      date: "31 December 2026",
+      icon: Ticket,
+      badgeColor: "bg-indigo-100 text-indigo-800 border-indigo-200",
+    },
+    {
+      event: "Regular Registration",
+      date: "15 January 2027",
+      icon: Calendar,
+      badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+    },
+    {
+      event: "Late Registration",
+      date: "28 February 2027",
+      icon: Clock,
+      badgeColor: "bg-orange-100 text-orange-800 border-orange-200",
+    },
+    {
+      event: "Conference Dates",
+      date: "26–27 March 2027",
+      icon: Award,
+      badgeColor: "bg-red-100 text-red-800 border-red-200 font-bold",
+    },
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 sm:px-6 md:px-8">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 text-red-700">
+    <div className="container mx-auto px-4 py-8 sm:px-6 md:px-8 max-w-4xl">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 text-red-700">
         Important Dates
       </h1>
+      <p className="text-center text-slate-600 mb-8 text-sm sm:text-base">
+        Key milestones & deadlines for ICNGT 2027
+      </p>
 
-      <div className="prose max-w-none">
-        <div className="space-y-4 mb-6">
-          {dates.map((item, index) => (
-            <InfoCard
-              key={index}
-              className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2"
-            >
-              <p className="font-semibold text-sm md:text-base">{item.label}</p>
-              <p className="text-sm md:text-base italic">{item.date}</p>
-            </InfoCard>
-          ))}
+      {/* Tabular Form */}
+      <div className="overflow-hidden rounded-xl border border-slate-200 shadow-sm bg-white mb-10">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-red-700 text-white text-sm sm:text-base uppercase tracking-wider">
+                <th className="py-4 px-6 font-semibold">Event / Milestone</th>
+                <th className="py-4 px-6 font-semibold text-right sm:text-left">Date</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100 text-sm sm:text-base">
+              {timeline.map((item, index) => {
+                const IconComponent = item.icon;
+                return (
+                  <tr
+                    key={index}
+                    className={`hover:bg-red-50/40 transition-colors ${
+                      index % 2 === 0 ? "bg-white" : "bg-slate-50/50"
+                    }`}
+                  >
+                    <td className="py-4 px-6 font-medium text-slate-800">
+                      <div className="flex items-center gap-3">
+                        <div className="p-2 rounded-lg bg-red-50 text-red-700 shrink-0">
+                          <IconComponent className="w-4 h-4 sm:w-5 sm:h-5" />
+                        </div>
+                        <span>{item.event}</span>
+                      </div>
+                    </td>
+                    <td className="py-4 px-6 font-semibold text-slate-700 text-right sm:text-left whitespace-nowrap">
+                      <span className={`inline-block px-3 py-1 rounded-full border text-xs sm:text-sm ${item.badgeColor}`}>
+                        {item.date}
+                      </span>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -45,3 +101,4 @@ const ImpDates = () => {
 };
 
 export default ImpDates;
+

@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Advisory from "./pages/committee/Advisory.jsx";
 import Organizer from "./pages/committee/Organizer.jsx";
 import Technical from "./pages/committee/Technical.jsx";
+import Governance from "./pages/committee/Governance.jsx";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/committee" element={<Committee />} />
+          <Route path="/committee/governance" element={<Governance />} />
           <Route path="/committee/advisory" element={<Advisory />} />
           <Route path="/committee/organizer" element={<Organizer />} />
           <Route path="/committee/technical" element={<Technical />} />

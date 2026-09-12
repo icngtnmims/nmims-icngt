@@ -39,7 +39,7 @@ const Publication = () => {
           </em>
         </p>
         <p className="text-base md:text-lg mb-4 text-justify leading-relaxed">
-          All full-length papers that receive acceptance at the ICNGT-2025
+          All full-length papers that receive acceptance at the ICNGT-2027
           Conference will be compiled in a conference proceeding published by
           the official publisher (to be announced) in both print and electronic
           formats, each possessing an ISBN for the book and a DOI for each

@@ -24,7 +24,7 @@ const Home = () => {
           </h1>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 text-red-700">
             Next Generation Technologies for Sustainable Development
-            (ICNGT-2026)
+            (ICNGT-2027)
           </h1>
         </div>
 
@@ -63,7 +63,7 @@ const Home = () => {
             </h2>
             <p className="text-base md:text-lg leading-relaxed">
               The International Conference on Next Generation Technologies for
-              Sustainable Developments (ICNGT-2026) is a landmark event that
+              Sustainable Developments (ICNGT-2027) is a landmark event that
               brings together experts, innovators, and thought leaders worldwide
               to discuss and envision the transformative potential of digital
               technology in three critical sectors: education, healthcare, and
@@ -81,7 +81,7 @@ const Home = () => {
             </h3>
             <p className="text-base md:text-lg leading-relaxed">
               International Conference on Next Generation Technologies for
-              Sustainable Developments (ICNGT-2026) is designed to foster
+              Sustainable Developments (ICNGT-2027) is designed to foster
               collaboration and knowledge exchange among researchers, industry
               professionals, policy makers, and educators. The event spans two
               days and features keynote presentations, panel discussions,
@@ -98,7 +98,7 @@ const Home = () => {
             </h3>
             <p className="text-base md:text-lg leading-relaxed mb-4">
               Participants in the International Conference on Next Generation
-              Technologies for Sustainable Developments (ICNGT-2026) will:
+              Technologies for Sustainable Developments (ICNGT-2027) will:
             </p>
             <ul className="list-disc list-inside space-y-2 text-base md:text-lg leading-relaxed ml-4">
               <li>
@@ -127,7 +127,7 @@ const Home = () => {
           <div>
             <p className="text-base md:text-lg leading-relaxed">
               International Conference on Next Generation Technologies for
-              Sustainable Developments (ICNGT-2026) serves as a catalyst for
+              Sustainable Developments (ICNGT-2027) serves as a catalyst for
               envisioning a future where digital technology revolutionizes
               education, healthcare, and industry. By bringing together diverse
               stakeholders, this conference fosters collaboration and
