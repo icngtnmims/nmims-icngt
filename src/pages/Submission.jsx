@@ -53,25 +53,13 @@ const Submission = () => {
       </div>
 
       {/* Microsoft CMT Service Acknowledgment Card (Required for CMT Conference Site Creation) */}
-      <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-red-200 mb-12 relative overflow-hidden">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="p-2.5 bg-red-50 text-red-700 rounded-xl shrink-0 border border-red-200">
-            <ShieldCheck className="w-6 h-6" />
-          </div>
-          <div>
-            <span className="text-xs uppercase tracking-widest font-bold text-red-700">
-              Peer-Review &amp; Manuscript Management
-            </span>
-            <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
-              Microsoft CMT Service Acknowledgment
-            </h2>
-          </div>
-        </div>
-
-        <blockquote className="bg-red-50/60 rounded-xl p-5 border-l-4 border-red-700 my-4 italic text-sm sm:text-base text-slate-800 leading-relaxed">
-          “The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.”
-        </blockquote>
-
+      <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 mb-12">
+        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
+          Microsoft CMT Service Acknowledgment
+        </h2>
+        <p className="text-sm sm:text-base text-slate-700 leading-relaxed my-4">
+          The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+        </p>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 pt-4 border-t border-slate-100">
           <p className="text-xs sm:text-sm text-slate-600">
             All authors must submit their research papers and abstracts through the official Microsoft CMT Portal.

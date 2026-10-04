@@ -101,6 +101,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Microsoft CMT Acknowledgment */}
+      <div className="border-t border-neutral-content/20 mt-8 pt-6 text-center text-xs text-neutral-content/80 max-w-4xl mx-auto">
+        <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+      </div>
     </footer>
   );
 };
