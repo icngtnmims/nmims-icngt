@@ -201,7 +201,7 @@ const Advisory = () => {
     <div className="container mx-auto px-4 py-8 sm:px-6 md:px-8 min-h-[60vh]">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-700 mb-3">
-          International Advisory Committee
+          Advisory Committee
         </h1>
         <p className="text-slate-600 text-sm sm:text-base">
           Distinguished academic scholars and industry experts serving on our advisory board.
