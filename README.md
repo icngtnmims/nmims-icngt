@@ -25,6 +25,7 @@ The conference places **Artificial Intelligence at the core** of next-generation
 * **Patron**: Shri Amrishbhai R. Patel (*Chancellor, SVKM's NMIMS & President, SVKM*)
 * **Joint Patron**: Shri Bhupeshbhai R. Patel (*Joint President, SVKM*)
 * **Chief Patron**: Dr. Ramesh Bhat (*Vice Chancellor, SVKM's NMIMS*)
+* **Honorary Chair**: Dr. Valentina Emilia Balas (*Faculty of Engineering, Aurel Vlaicu University of Arad, Romania*)
 * **Conference General Chair**: Prof. (Dr.) Anupam Shukla (*Director, SVNIT, Surat*)
 * **Conference Chair**: Dr. Sunita Patil (*Director, SVKM's NMIMS, Shirpur Campus*)
 * **Conference Co-Chair & Convener**: Dr. Venkatadri Marriboyina (*Associate Dean, MPSTME, Shirpur Campus*)

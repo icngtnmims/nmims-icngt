@@ -2,6 +2,15 @@ import React from "react";
 
 const sections = [
   {
+    title: "HONORARY CHAIR",
+    items: [
+      {
+        name: "Dr. Valentina Emilia Balas",
+        designation: "Faculty of Engineering, Aurel Vlaicu University of Arad, Romania",
+      },
+    ],
+  },
+  {
     title: "CONFERENCE GENERAL CHAIR",
     items: [
       {
