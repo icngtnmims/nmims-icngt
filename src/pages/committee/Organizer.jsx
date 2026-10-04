@@ -2,6 +2,15 @@ import React from "react";
 
 const sections = [
   {
+    title: "CONFERENCE GENERAL CHAIR",
+    items: [
+      {
+        name: "Prof. (Dr.) Anupam Shukla",
+        designation: "Director, SVNIT, Surat",
+      },
+    ],
+  },
+  {
     title: "CONFERENCE CHAIR",
     items: [
       {
