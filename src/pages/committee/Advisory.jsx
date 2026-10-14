@@ -3,6 +3,22 @@ import { Search, Building2, UserCheck } from "lucide-react";
 
 const advisoryMembers = [
   {
+    name: "Shri Madhav N. Welling",
+    affiliation: "Advisor to the President-SVKM & Chancellor-NMIMS",
+  },
+  {
+    name: "Shri Asoke Basak",
+    affiliation: "Advisor to the President",
+  },
+  {
+    name: "Dr. Koteswararao Anne",
+    affiliation: "Dean, MPSTME Mumbai",
+  },
+  {
+    name: "Dr. Jagannath Sahoo",
+    affiliation: "Dean, SPPSPTM Mumbai",
+  },
+  {
     name: "Dr. Dharmendra Gurve",
     affiliation: "Ryerson University, Toronto, Ontario",
   },
