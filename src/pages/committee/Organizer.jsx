@@ -21,6 +21,7 @@ const sections = [
   },
   {
     title: "CONFERENCE CHAIR",
+    full: true,
     items: [
       {
         name: "Dr. Sunita Patil",
@@ -29,7 +30,7 @@ const sections = [
     ],
   },
   {
-    title: "CONFERENCE CO-CHAIR",
+    title: "CONVENORS",
     items: [
       {
         name: "Dr. Venkatadri Marriboyina",
@@ -38,20 +39,72 @@ const sections = [
     ],
   },
   {
-    title: "CONVENORS",
-    items: [],
+    title: "CO-CONVENORS",
+    items: [
+      {
+        name: "Dr. Shyam Sundar Pancholi",
+        designation: "Associate Dean, SPTM, Shirpur",
+      },
+      {
+        name: "Dr. Vijay Shivankar",
+        designation: "Associate Dean, CTF, Shirpur",
+      },
+    ],
   },
   {
     title: "COORDINATORS",
-    items: [],
+    items: [
+      {
+        name: "Dr. Nitin Choubey",
+        designation: "HOD Computer Science",
+      },
+      {
+        name: "Dr. Suresh Kurumbanshi",
+        designation: "HOD Computer Engineering",
+      },
+      {
+        name: "Dr. Srikanth Pulipeti",
+        designation: "HOD Information Technology",
+      },
+      {
+        name: "Dr. Praveen Kumar Loharkar",
+        designation: "HOD Artificial Intelligence and Machine Learning",
+      },
+      {
+        name: "Dr. Bipin Jadhav",
+        designation: "HOD Basic Science and Humanities",
+      },
+    ],
   },
   {
     title: "ORGANIZING COMMITTEE",
-    items: [],
+    items: [
+      {
+        name: "Dr. Rashmi Sharma",
+        designation: "Professor, Computer Engineering",
+      },
+      {
+        name: "Dr. Gagandeep Kaur",
+        designation: "Assistant Professor, Artificial Intelligence and Machine Learning",
+      },
+      {
+        name: "Dr. Naziya Hussain",
+        designation: "Assistant Professor, Computer Engineering",
+      },
+      {
+        name: "Dr. Durgesh Sharma",
+        designation: "Assistant Professor, Computer Engineering",
+      },
+    ],
   },
   {
     title: "ADMINISTRATION",
-    items: [],
+    items: [
+      {
+        name: "Mr. Shivaji Gaikwad",
+        designation: "Administration Officer",
+      },
+    ],
   },
 ];
 
@@ -64,7 +117,7 @@ const Organizer = () => {
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
         {sections.map((sec) => (
-          <div key={sec.title} className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+          <div key={sec.title} className={`bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden ${sec.full ? "md:col-span-2" : ""}`}>
             <div className="bg-red-700 text-white font-bold px-4 py-3 text-center text-sm sm:text-base uppercase tracking-wide">
               {sec.title}
             </div>

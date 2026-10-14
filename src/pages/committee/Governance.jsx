@@ -1,26 +1,54 @@
 import React from "react";
 import { User } from "lucide-react";
 
-const governanceMembers = [
+const chiefPatrons = [
   {
     name: "Shri. Amrish Patel",
-    role: "Chancellor, NMIMS University • India",
+    role: "Hon. President, SVKM and Chancellor, NMIMS University • India",
     img: "/committee/amrish-patel.png",
   },
   {
-    name: "Professor Sougata Ray",
-    role: "Vice Chancellor, NMIMS University • India",
-    img: "/committee/sougata-ray.png",
+    name: "Shri Bhupesh Patel",
+    role: "Hon. Joint President and Trustee, SVKM",
+    img: "/committee/bhupesh-patel.png",
   },
   {
-    name: "Dr. Meena Chintamaneni",
-    role: "Pro Vice Chancellor, NMIMS University • India",
-    img: "/committee/meena-chintamaneni.png",
+    name: "Shri Chintan Patel",
+    role: "Vice President & Trustee, SVKM",
+    img: "/committee/chintan-patel.png",
+  },
+];
+
+const patrons = [
+  {
+    name: "Shri Jayant Gandhi",
+    role: "Hon. Secretary, SVKM",
+    img: "/committee/jayant-gandhi.png",
+  },
+  {
+    name: "Shri Rajgopal Bhandari",
+    role: "Managing Committee Member, SVKM",
+    img: "/committee/Rajgopal-sir.webp",
+  },
+  {
+    name: "Ms. Rita Patel",
+    role: "I/C, NMIMS Shirpur Campus",
+    img: "/committee/rita-patel.webp",
+  },
+  {
+    name: "Prof. Sougata Ray",
+    role: "Vice Chancellor, NMIMS University • India",
+    img: "/committee/sougata-ray.png",
   },
   {
     name: "Dr. Sharad Mhaiskar",
     role: "Provost (Administration), NMIMS University • India",
     img: "/committee/sharad-mhaiskar.png",
+  },
+  {
+    name: "Dr. Meena Chintamaneni",
+    role: "Pro Vice Chancellor, NMIMS University • India",
+    img: "/committee/meena-chintamaneni.png",
   },
   {
     name: "Dr. Abhishek Ranjan",
@@ -39,6 +67,11 @@ const governanceMembers = [
   },
 ];
 
+const sections = [
+  { title: "Chief Patrons", members: chiefPatrons },
+  { title: "Patrons", members: patrons },
+];
+
 const Governance = () => {
   return (
     <div className="container mx-auto px-4 py-8 sm:px-6 md:px-8">
@@ -46,8 +79,13 @@ const Governance = () => {
         Governance and Academic Leadership
       </h1>
 
+      {sections.map((sec) => (
+      <section key={sec.title} className="mb-12">
+      <h2 className="text-xl sm:text-2xl font-bold mb-8 text-red-700 text-center">
+        {sec.title}
+      </h2>
       <div className="max-w-6xl mx-auto flex flex-wrap gap-8 justify-center">
-        {governanceMembers.map((m, i) => (
+        {sec.members.map((m, i) => (
           <div
             key={i}
             className="bg-white rounded-xl shadow-md border border-slate-100 p-6 flex flex-col items-center text-center w-full max-w-xs transition-all hover:shadow-lg hover:-translate-y-1"
@@ -73,6 +111,8 @@ const Governance = () => {
           </div>
         ))}
       </div>
+      </section>
+      ))}
     </div>
   );
 };
