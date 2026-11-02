@@ -65,7 +65,7 @@ const Submission = () => {
             All authors must submit their research papers and abstracts through the official Microsoft CMT Portal.
           </p>
           <a
-            href="https://cmt3.research.microsoft.com/"
+            href="https://cmt3.research.microsoft.com/ICNGT2027/Submission/Index"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white font-semibold text-sm transition-all shadow-sm shrink-0"
@@ -169,7 +169,7 @@ const Submission = () => {
 
         <div className="text-center">
           <a
-            href="https://cmt3.research.microsoft.com/"
+            href="https://cmt3.research.microsoft.com/ICNGT2027/Submission/Index"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 btn bg-red-700 text-white hover:bg-red-800 border-red-700 text-sm sm:text-base px-6 shadow-md"
@@ -233,7 +233,7 @@ const Submission = () => {
 
         <div className="text-center mb-6">
           <a
-            href="https://cmt3.research.microsoft.com/"
+            href="https://cmt3.research.microsoft.com/ICNGT2027/Submission/Index"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 btn bg-red-700 text-white hover:bg-red-800 border-red-700 text-sm sm:text-base px-6 shadow-md"
