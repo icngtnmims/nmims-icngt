@@ -22,7 +22,7 @@ const Accommodation = () => {
     { name: "Surya Palace", contact: "02563-257404" },
     { name: "Hotal Atithi", contact: "02563-255716" },
     { name: "Hotel Aaram", contact: "02563-256162" },
-    { name: "Hotel Malhar- Residencency", contact: "02563-256719" },
+    { name: "Hotel Malhar Residency", contact: "02563-256719" },
   ];
 
   return (
