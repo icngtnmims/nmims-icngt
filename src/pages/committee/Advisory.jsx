@@ -1,208 +1,63 @@
 import React, { useState } from "react";
-import { Search, Building2, UserCheck } from "lucide-react";
+import { Search } from "lucide-react";
 
-const advisoryMembers = [
-  {
-    name: "Shri Madhav N. Welling",
-    affiliation: "Advisor to the President-SVKM & Chancellor-NMIMS",
-  },
-  {
-    name: "Shri Asoke Basak",
-    affiliation: "Advisor to the President",
-  },
-  {
-    name: "Dr. Koteswararao Anne",
-    affiliation: "Dean, MPSTME Mumbai",
-  },
-  {
-    name: "Dr. Jagannath Sahoo",
-    affiliation: "Dean, SPPSPTM Mumbai",
-  },
-  {
-    name: "Dr. Dharmendra Gurve",
-    affiliation: "Ryerson University, Toronto, Ontario",
-  },
-  {
-    name: "Dr. Aleem Ali",
-    affiliation: "Department of Computer Science & Engineering, Chandigarh University, Mohali, Punjab",
-  },
-  {
-    name: "Dr. Arun Somani",
-    affiliation: "Iowa State University, USA",
-  },
-  {
-    name: "Dr. Basant Agarwal",
-    affiliation: "Central University of Rajasthan, Ajmer, India",
-  },
-  {
-    name: "Dr. Deepak Dahiya",
-    affiliation: "School of Engineering and Computer Science at University of Pittsburgh Johnstown, Pennsylvania, US",
-  },
-  {
-    name: "Dr. Ghanshyam G. Tejani",
-    affiliation: "Yuan Ze University, Taoyuan, Taiwan",
-  },
-  {
-    name: "Dr. Gousia Habib",
-    affiliation: "Finnish Center for Artificial Intelligence (FCAI)",
-  },
-  {
-    name: "Dr. J. C. Patni",
-    affiliation: "Chandigarh University, Mohali",
-  },
-  {
-    name: "Dr. Jey Chelladurai",
-    affiliation: "East Stroudsburg University, USA",
-  },
-  {
-    name: "Dr. Manoj Kumar",
-    affiliation: "University of Wollongong in Dubai",
-  },
-  {
-    name: "Dr. Muhammad Fazal Ijaz",
-    affiliation: "Torrens University Australia",
-  },
-  {
-    name: "Dr. Nitin",
-    affiliation: "College of Engineering and Applied Sciences, University of Cincinnati",
-  },
-  {
-    name: "Dr. S. Ganapathy",
-    affiliation: "NITTTR, Bhopal",
-  },
-  {
-    name: "Dr. Sashikala Mishra",
-    affiliation: "The University of Western Australia",
-  },
-  {
-    name: "Dr. Shilpa Gite",
-    affiliation: "University of York",
-  },
-  {
-    name: "Dr. Sonal Amit Jain",
-    affiliation: "PG Department of Computer Science & Information Technology, Sardar Patel University, Vallabh Vidyanagar, India",
-  },
-  {
-    name: "Dr. Sunil Pathak",
-    affiliation: "Department of Computer Science & Engineering, Amity School of Engineering & Technology, Amity University Rajasthan, Jaipur, India",
-  },
-  {
-    name: "Dr. Sunita Varma",
-    affiliation: "Shri G.S. Institute of Technology and Science (SGSITS), Indore, Madhya Pradesh, India",
-  },
-  {
-    name: "Dr. V. Masilamani",
-    affiliation: "IIITDM Kancheepuram",
-  },
-  {
-    name: "Dr. Vidy Potdar",
-    affiliation: "Curtin University, Australia",
-  },
-  {
-    name: "Dr. Vishnu S. Pendyala",
-    affiliation: "San José State University, USA",
-  },
-  {
-    name: "Dr. Yogesh Hote",
-    affiliation: "Dept of EE, IIT Roorkee",
-  },
-  {
-    name: "Dr. Jayendra Kumar",
-    affiliation: "Department of Electronics and Communication Engineering, National Institute of Technology, Jamshedpur",
-  },
-  {
-    name: "Dr. Sateesh Kumar Peddoju",
-    affiliation: "Indian Institute of Technology, Roorkee",
-  },
-  {
-    name: "Dr. Vilas Gaidhane",
-    affiliation: "Birla Institute of Technology & Science (BITS), Pilani Dubai International Academic City P O Box 345055, Dubai, UAE",
-  },
-  {
-    name: "Dr. Vimal Bhatia",
-    affiliation: "Dept of EE, IIT Indore, Khandwa Road, Indore",
-  },
-  {
-    name: "Dr. Vishal Satpute",
-    affiliation: "Department of Electronics & Communication Engineering, VNIT, Nagpur",
-  },
-  {
-    name: "Dyllon Dekok",
-    affiliation: "College of Engineering and Applied Sciences, University of Cincinnati",
-  },
-  {
-    name: "Mr. Anil Omanwar",
-    affiliation: "Perth, Western Australia, Australia",
-  },
-  {
-    name: "Mr. Kashyap Rajpal",
-    affiliation: "San Diego, CA, USA",
-  },
-  {
-    name: "Mr. Krunal Odrera",
-    affiliation: "Aldie, Virginia, United States",
-  },
-  {
-    name: "Mr. Kushal Shah",
-    affiliation: "Silicon Valley, CA, USA",
-  },
-  {
-    name: "Mr. Rakesh Rajput",
-    affiliation: "Swissgrid AG, Aarau, Aargau, Switzerland",
-  },
-  {
-    name: "Mr. Rishabh Kumar",
-    affiliation: "Bank of America, Dallas Fort, Plano, Texas, United States",
-  },
-  {
-    name: "Mr. Uttasarg Singh",
-    affiliation: "Navy Federal Credit Union, Vienna, Virginia, United States",
-  },
-  {
-    name: "Mr. Vishnukant",
-    affiliation: "EIDOS Global, Bedford, Orpington, England, United Kingdom",
-  },
-  {
-    name: "Mr. Adheip Nagarajan",
-    affiliation: "Data Products, BDIPlus, New York, USA",
-  },
-  {
-    name: "Mr. Aman Wadhwa",
-    affiliation: "InComm Payments, Alpharetta, Georgia, United States",
-  },
-  {
-    name: "Mr. Lavjeet Khanuja",
-    affiliation: "NielsenIQ, USA",
-  },
-  {
-    name: "Mr. Rishi Ashar",
-    affiliation: "Sun Life Financial, Toronto, Ontario, Canada",
-  },
-  {
-    name: "Mr. Saurabh Sharma",
-    affiliation: "Vancouver, British Columbia, Canada",
-  },
-  {
-    name: "Mr. Umang Revari",
-    affiliation: "Toronto, Ontario, Canada",
-  },
-  {
-    name: "Ms. Manali Kapadia",
-    affiliation: "Medtronic BRC, The Netherlands",
-  },
-  {
-    name: "Ms. Gurpreet Khanuja",
-    affiliation: "Ultimate Kronos Group, Georgia, USA",
-  },
-  {
-    name: "Prof. Dr. Kemal Polat, IEEE Senior Member",
-    affiliation: "Bolu Abant İzzet Baysal University, Gölköy Campus",
-  },
-  {
-    name: "Dr. Subhayu Das",
-    affiliation: "Partnership & Marketing Department",
-  },
+const internationalMembers = [
+  { name: "Dr. Dharmendra Gurve", university: "Ryerson University", state: "Ontario", country: "Canada" },
+  { name: "Dr. Arun Somani", university: "Iowa State University", state: "Iowa", country: "USA" },
+  { name: "Dr. Deepak Dahiya", university: "University of Pittsburgh Johnstown", state: "Pennsylvania", country: "USA" },
+  { name: "Dr. Ghanshyam G. Tejani", university: "Yuan Ze University, Taoyuan", state: "", country: "Taiwan" },
+  { name: "Dr. Gousia Habib", university: "Finnish Center for Artificial Intelligence (FCAI)", state: "", country: "Finland" },
+  { name: "Dr. Jey Chelladurai", university: "East Stroudsburg University", state: "Pennsylvania", country: "USA" },
+  { name: "Dr. Manoj Kumar", university: "University of Wollongong in Dubai", state: "Dubai", country: "UAE" },
+  { name: "Dr. Muhammad Fazal Ijaz", university: "Torrens University Australia", state: "", country: "Australia" },
+  { name: "Dr. Nitin", university: "University of Cincinnati", state: "Ohio", country: "USA" },
+  { name: "Dr. Sashikala Mishra", university: "The University of Western Australia", state: "Western Australia", country: "Australia" },
+  { name: "Dr. Shilpa Gite", university: "University of York", state: "", country: "" },
+  { name: "Dr. Vidy Potdar", university: "Curtin University", state: "Western Australia", country: "Australia" },
+  { name: "Dr. Vishnu S. Pendyala", university: "San José State University", state: "California", country: "USA" },
+  { name: "Dr. Vilas Gaidhane", university: "Birla Institute of Technology & Science (BITS), Pilani Dubai", state: "Dubai", country: "UAE" },
+  { name: "Dyllon Dekok", university: "University of Cincinnati", state: "Ohio", country: "USA" },
+  { name: "Mr. Anil Omanwar", university: "", state: "Western Australia", country: "Australia" },
+  { name: "Mr. Kashyap Rajpal", university: "", state: "California", country: "USA" },
+  { name: "Mr. Krunal Odrera", university: "", state: "Virginia", country: "USA" },
+  { name: "Mr. Kushal Shah", university: "", state: "California", country: "USA" },
+  { name: "Mr. Rakesh Rajput", university: "Swissgrid AG", state: "Aargau", country: "Switzerland" },
+  { name: "Mr. Rishabh Kumar", university: "Bank of America", state: "Texas", country: "USA" },
+  { name: "Mr. Uttasarg Singh", university: "Navy Federal Credit Union", state: "Virginia", country: "USA" },
+  { name: "Mr. Vishnukant", university: "EIDOS Global", state: "England", country: "United Kingdom" },
+  { name: "Mr. Adheip Nagarajan", university: "BDIPlus", state: "New York", country: "USA" },
+  { name: "Mr. Aman Wadhwa", university: "InComm Payments", state: "Georgia", country: "USA" },
+  { name: "Mr. Lavjeet Khanuja", university: "NielsenIQ", state: "", country: "USA" },
+  { name: "Mr. Rishi Ashar", university: "Sun Life Financial", state: "Ontario", country: "Canada" },
+  { name: "Mr. Saurabh Sharma", university: "", state: "British Columbia", country: "Canada" },
+  { name: "Mr. Umang Revari", university: "", state: "Ontario", country: "Canada" },
+  { name: "Ms. Manali Kapadia", university: "Medtronic BRC", state: "", country: "The Netherlands" },
+  { name: "Ms. Gurpreet Khanuja", university: "Ultimate Kronos Group", state: "Georgia", country: "USA" },
+  { name: "Prof. Dr. Kemal Polat, IEEE Senior Member", university: "Bolu Abant İzzet Baysal University", state: "Bolu", country: "Türkiye" },
 ];
+
+const indianMembers = [
+  { name: "Shri Madhav N. Welling", university: "SVKM / NMIMS (Advisor to the President-SVKM & Chancellor-NMIMS)", state: "Maharashtra", country: "India" },
+  { name: "Shri Asoke Basak", university: "SVKM / NMIMS (Advisor to the President)", state: "Maharashtra", country: "India" },
+  { name: "Dr. Koteswararao Anne", university: "MPSTME Mumbai, NMIMS (Dean)", state: "Maharashtra", country: "India" },
+  { name: "Dr. Jagannath Sahoo", university: "SPPSPTM Mumbai, NMIMS (Dean)", state: "Maharashtra", country: "India" },
+  { name: "Dr. Aleem Ali", university: "Chandigarh University, Mohali", state: "Punjab", country: "India" },
+  { name: "Dr. Basant Agarwal", university: "Central University of Rajasthan, Ajmer", state: "Rajasthan", country: "India" },
+  { name: "Dr. J. C. Patni", university: "Chandigarh University, Mohali", state: "Punjab", country: "India" },
+  { name: "Dr. S. Ganapathy", university: "NITTTR, Bhopal", state: "Madhya Pradesh", country: "India" },
+  { name: "Dr. Sonal Amit Jain", university: "Sardar Patel University, Vallabh Vidyanagar", state: "Gujarat", country: "India" },
+  { name: "Dr. Sunil Pathak", university: "Amity University Rajasthan, Jaipur", state: "Rajasthan", country: "India" },
+  { name: "Dr. Sunita Varma", university: "Shri G.S. Institute of Technology and Science (SGSITS), Indore", state: "Madhya Pradesh", country: "India" },
+  { name: "Dr. V. Masilamani", university: "IIITDM Kancheepuram", state: "Tamil Nadu", country: "India" },
+  { name: "Dr. Yogesh Hote", university: "IIT Roorkee", state: "Uttarakhand", country: "India" },
+  { name: "Dr. Jayendra Kumar", university: "National Institute of Technology, Jamshedpur", state: "Jharkhand", country: "India" },
+  { name: "Dr. Sateesh Kumar Peddoju", university: "Indian Institute of Technology, Roorkee", state: "Uttarakhand", country: "India" },
+  { name: "Dr. Vimal Bhatia", university: "IIT Indore", state: "Madhya Pradesh", country: "India" },
+  { name: "Dr. Vishal Satpute", university: "VNIT, Nagpur", state: "Maharashtra", country: "India" },
+  { name: "Dr. Subhayu Das", university: "Partnership & Marketing Department", state: "", country: "" },
+];
+
+const advisoryMembers = [...internationalMembers, ...indianMembers];
 
 const Advisory = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -210,7 +65,9 @@ const Advisory = () => {
   const filteredMembers = advisoryMembers.filter(
     (member) =>
       member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      member.affiliation.toLowerCase().includes(searchTerm.toLowerCase())
+      [member.university, member.state, member.country].some((f) =>
+        f.toLowerCase().includes(searchTerm.toLowerCase())
+      )
   );
 
   return (
@@ -237,37 +94,20 @@ const Advisory = () => {
       </div>
 
       <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center mb-6">
-          <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-            Showing {filteredMembers.length} of {advisoryMembers.length} Members
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <ul className="bg-white border border-slate-200 rounded-xl shadow-sm divide-y divide-slate-100">
           {filteredMembers.map((member, idx) => (
-            <div
-              key={idx}
-              className="bg-white border border-slate-200 hover:border-red-300 rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
-            >
-              <div>
-                <div className="flex items-start justify-between gap-3 mb-2">
-                  <div className="flex items-center gap-2">
-                    <UserCheck className="w-4 h-4 text-red-700 shrink-0 mt-0.5" />
-                    <h3 className="font-semibold text-slate-900 group-hover:text-red-700 transition-colors text-base leading-snug">
-                      {member.name}
-                    </h3>
-                  </div>
-                </div>
-                {member.affiliation && (
-                  <div className="flex items-start gap-2 mt-2 text-slate-600 text-xs leading-relaxed">
-                    <Building2 className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
-                    <span>{member.affiliation}</span>
-                  </div>
-                )}
-              </div>
-            </div>
+            <li key={idx} className="flex items-start gap-3 px-4 py-3 sm:px-5 hover:bg-red-50/40 transition-colors">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-700 shrink-0 mt-2.5" />
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                <span className="font-semibold text-slate-900">{member.name}</span>
+                {[member.university, member.state, member.country]
+                  .filter(Boolean)
+                  .map((f) => `, ${f}`)
+                  .join("")}
+              </p>
+            </li>
           ))}
-        </div>
+        </ul>
 
         {filteredMembers.length === 0 && (
           <div className="text-center py-12 bg-white rounded-xl border border-slate-200">
