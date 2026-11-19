@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp, Cpu, Zap, Leaf, HeartPulse, Factory, GraduationCap, Sparkles, CheckCircle2, HelpCircle } from "lucide-react";
+import { ChevronDown, ChevronUp, BrainCircuit, Sparkles, Eye, Bot, ShieldCheck, Leaf, HelpCircle } from "lucide-react";
 
 const CallForPapers = () => {
   // Track open/close state (null = none open, or index)
@@ -23,163 +23,95 @@ const CallForPapers = () => {
     }
   };
 
-  const areasOfInterest = [
-    "Artificial Intelligence, Machine Learning and Deep Learning",
-    "Generative AI, Large Language Models and Intelligent Agents",
-    "Explainable, Responsible and Ethical AI",
-    "AI for Sustainability, Climate Action and Resource Optimization",
-    "Data Science, Big Data Analytics and Predictive Modelling",
-    "Internet of Things (IoT), Edge AI and Intelligent Connected Systems",
-    "Cloud Computing, High-Performance Computing and AI Infrastructure",
-    "Digital Twins, Simulation and Intelligent Modelling",
-    "Robotics, Autonomous Systems and Intelligent Automation",
-    "Computer Vision, Natural Language Processing and Speech Technologies",
-    "Cybersecurity, Digital Forensics and AI-enabled Security",
-    "Blockchain, Web3 and Decentralized Technologies",
-    "Quantum Computing and Quantum-Inspired AI",
-    "Smart Cities, Smart Infrastructure and Intelligent Transportation",
-    "Renewable Energy, Smart Grids and Energy Optimization",
-    "Climate Technologies and Low-Carbon Engineering",
-    "Sustainable Agriculture, Precision Farming and Food Security",
-    "Biotechnology, Bioinformatics, Genomics and Proteomics",
-    "AI in Pharmaceutical Sciences and Drug Discovery",
-    "Healthcare AI, mHealth, Telemedicine and Digital Health",
-    "Personalized and Preventive Healthcare",
-    "Electronic Health Records and Health Analytics",
-    "Sustainable Manufacturing and Industry 4.0/5.0",
-    "Circular Economy, Eco-materials and Green Manufacturing",
-    "Smart Textiles and Sustainable Textile Technologies",
-    "Nanotechnology and Advanced Materials",
-    "3D Printing, Additive Manufacturing and Sustainable Design",
-    "Augmented Reality, Virtual Reality and Extended Reality",
-    "Human-Computer Interaction, UI/UX and Inclusive Technologies",
-    "AI in Education and Intelligent Learning Systems",
-    "Technology Governance, Policy, Ethics and Responsible Innovation",
-    "Emerging and Next Generation Technologies for Sustainable Development",
-  ];
-
   const tracksData = [
     {
-      number: "I",
-      title: "Artificial Intelligence, Intelligent Systems and Digital Transformation",
-      icon: Cpu,
+      number: "1",
+      title: "Foundational, Learning and Computational Intelligence",
+      icon: BrainCircuit,
       topics: [
-        "AI and ML",
-        "Generative AI",
-        "Deep Learning",
-        "Explainable AI",
-        "Computer Vision",
-        "NLP",
-        "Data Science",
-        "IoT",
-        "Edge AI",
-        "Cloud Computing",
-        "Digital Twins",
-        "Robotics",
-        "Intelligent Automation",
-        "Cybersecurity",
-        "Quantum AI",
+        "AI Foundations, Intelligent Algorithms and Computational Intelligence",
+        "Machine Learning, Deep Learning and Data-Centric Intelligence",
+        "Federated, Distributed and Collaborative Learning",
+        "Quantum Computing and Quantum Intelligence",
+        "Neuromorphic Computing and Brain-Inspired Intelligence",
+        "High-Performance, Parallel and Next-Generation Computing",
+        "Digital Transformation and Intelligent Systems",
       ],
     },
     {
-      number: "II",
-      title: "AI for Clean Energy, Climate Action and Resilient Infrastructure",
-      icon: Zap,
+      number: "2",
+      title: "Generative, Language, Cognitive and Human-Centred Intelligence",
+      icon: Sparkles,
       topics: [
-        "Renewable Energy",
-        "Smart Grids",
-        "Energy Analytics",
-        "AI for Energy Optimization",
-        "Climate Modelling",
-        "Carbon Management",
-        "Low-Carbon Technologies",
-        "Sustainable Infrastructure",
-        "Smart Cities",
-        "Intelligent Transportation",
-        "Climate-Resilient Systems",
+        "Generative AI, Foundation Models and Large Language Models",
+        "Natural Language Processing and Language Intelligence",
+        "Speech Processing and Conversational Intelligence",
+        "Knowledge Representation, Cognitive and Neuro-Symbolic Intelligence",
+        "Human–AI Interaction and Collaborative Intelligence",
+        "AI in Education, Learning Analytics and Intelligent Tutoring Systems",
+        "Human-Centred, Inclusive and Assistive Technologies",
       ],
     },
     {
-      number: "III",
-      title: "AI for Sustainable Agriculture, Food Systems and Bio-resources",
+      number: "3",
+      title: "Visual, Multimodal, Spatial and Scientific Intelligence",
+      icon: Eye,
+      topics: [
+        "Computer Vision, Image Processing and Video Intelligence",
+        "Multimodal AI and Vision-Language Intelligence",
+        "3D Vision, Spatial Computing and Immersive Technologies",
+        "Scientific Computing and AI-Driven Scientific Discovery",
+        "Medical Imaging and Computer-Aided Diagnosis",
+        "Remote Sensing, Geospatial Intelligence and Earth Observation",
+        "Sports Analytics and Performance Intelligence",
+        "Pattern Recognition and Intelligent Signal Processing",
+      ],
+    },
+    {
+      number: "4",
+      title: "Autonomous, Embodied, Agentic and Cyber-Physical Intelligence",
+      icon: Bot,
+      topics: [
+        "Autonomous Agents, Agentic AI and Multi-Agent Systems",
+        "Robotics, Embodied AI and Intelligent Automation",
+        "Autonomous Mobility and Intelligent Transportation Systems",
+        "Cyber-Physical Systems and Industrial Intelligence",
+        "Smart Manufacturing, Industry 4.0/5.0 and Industrial IoT",
+        "Digital Twins, Predictive Maintenance and Intelligent Control",
+        "Smart Grids, Intelligent Energy Systems and Resilient Infrastructure",
+        "Autonomous Systems for Disaster Prediction and Risk Management",
+      ],
+    },
+    {
+      number: "5",
+      title: "Trustworthy, Secure, Responsible and Societal Intelligence",
+      icon: ShieldCheck,
+      topics: [
+        "Responsible, Explainable and Interpretable AI",
+        "Trustworthy, Reliable, Safe and Ethical AI",
+        "AI Security, Privacy-Preserving Computing and Data Protection",
+        "Cybersecurity, Digital Forensics and Secure Digital Infrastructures",
+        "AI Governance, Policy and Regulatory Frameworks",
+        "Fairness, Transparency and Algorithmic Accountability",
+        "Digital Inclusion, Accessibility and Societal Impact",
+        "Sustainable and Inclusive Digital Technologies",
+      ],
+    },
+    {
+      number: "6",
+      title: "AI for Sustainable Development and Interdisciplinary Applications",
       icon: Leaf,
       topics: [
-        "Precision Agriculture",
-        "AI-enabled Farming",
-        "IoT in Agriculture",
-        "Crop and Soil Analytics",
-        "Integrated Nutrient Management",
-        "Sustainable Agriculture",
-        "Food Security",
-        "Agri-supply Chains",
-        "Biotechnology",
-        "Bioinformatics",
-        "Genomics",
-        "Proteomics",
-        "Bio-resource Management",
-      ],
-    },
-    {
-      number: "IV",
-      title: "AI, Healthcare Technologies and Community Well-being",
-      icon: HeartPulse,
-      topics: [
-        "Healthcare AI",
-        "Medical Imaging",
-        "AI-assisted Diagnosis",
-        "Drug Discovery",
-        "Pharmaceutical Sciences",
-        "mHealth",
-        "Telemedicine",
-        "Personalized and Preventive Medicine",
-        "Genomics",
-        "Electronic Health Records",
-        "Health Analytics",
-        "Public Health",
-        "Assistive Technologies",
-        "Community Well-being",
-      ],
-    },
-    {
-      number: "V",
-      title: "AI, Circular Economy, Smart Materials and Sustainable Manufacturing",
-      icon: Factory,
-      topics: [
-        "Industry 4.0/5.0",
-        "Intelligent Manufacturing",
-        "AI-enabled Design",
-        "Robotics",
-        "3D Printing",
-        "Additive Manufacturing",
-        "Circular Economy",
-        "Sustainable Textiles",
-        "Smart Textiles",
-        "Eco-materials",
-        "Nanotechnology",
-        "Green Manufacturing",
-        "Waste Management",
-        "Resource Optimization",
-      ],
-    },
-    {
-      number: "VI",
-      title: "AI in Education, Society, Ethics, Policy and Technology Governance",
-      icon: GraduationCap,
-      topics: [
-        "AI in Education",
-        "Intelligent Learning Systems",
-        "Human-AI Interaction",
-        "UI/UX",
-        "Digital Inclusion",
-        "Responsible AI",
-        "AI Ethics",
-        "Privacy and Security",
-        "Technology Policy",
-        "AI Governance",
-        "Technology for Social Good",
-        "Sustainable Development",
-        "Digital Society",
-        "Future of Work",
+        "AI for Sustainable and Precision Agriculture",
+        "Smart Farming, Crop Monitoring and Agricultural Robotics",
+        "AI in Healthcare, Biomedical Engineering and Life Sciences",
+        "Digital Health, Healthcare Analytics and Intelligent Medical Systems",
+        "AI for Renewable Energy, Climate Intelligence and Environmental Sustainability",
+        "Smart Cities, Sustainable Infrastructure and Urban Development",
+        "AI for Water, Waste and Natural Resource Management",
+        "Smart Supply Chains, Food Systems and Circular Economy",
+        "Sustainable Manufacturing, Resource Efficiency and Green Technologies",
+        "AI for Social Innovation and Sustainable Development",
       ],
     },
   ];
@@ -209,35 +141,6 @@ const CallForPapers = () => {
         </p>
         <p>
           The conference places <strong className="text-slate-900">Artificial Intelligence at the core</strong> of Next Generation Technologies, with particular emphasis on responsible and meaningful applications of AI for addressing environmental, economic, industrial, agricultural, healthcare, educational, and societal challenges. Contributions are encouraged to demonstrate innovative methodologies, practical applications, interdisciplinary approaches, intelligent decision-making, technological convergence, and measurable contributions to sustainability and quality of life.
-        </p>
-      </div>
-
-      {/* Areas of Interest Section */}
-      <div className="mb-14">
-        <div className="flex items-center gap-3 mb-6">
-          <Sparkles className="w-6 h-6 text-red-700 shrink-0" />
-          <h2 className="text-2xl sm:text-3xl font-bold text-red-700">
-            Areas of Interest
-          </h2>
-        </div>
-        <p className="text-sm sm:text-base text-slate-600 mb-6">
-          Submissions are invited in, but are not limited to, the following key domains:
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {areasOfInterest.map((area, index) => (
-            <div
-              key={index}
-              className="flex items-start gap-3 p-3.5 bg-slate-50/80 hover:bg-red-50/40 rounded-xl border border-slate-200/80 hover:border-red-200 transition-colors"
-            >
-              <CheckCircle2 className="w-4 h-4 text-red-700 mt-0.5 shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-slate-800">
-                {area}
-              </span>
-            </div>
-          ))}
-        </div>
-        <p className="text-xs sm:text-sm text-slate-500 italic mt-4 text-center">
-          * Contributions addressing interdisciplinary applications and emerging technologies at the intersection of AI and sustainability are particularly encouraged.
         </p>
       </div>
 
@@ -290,9 +193,6 @@ const CallForPapers = () => {
                       <div className="flex items-center gap-2 mb-1">
                         <span className="px-2.5 py-0.5 rounded-md bg-red-700 text-white font-bold text-xs">
                           Track {track.number}
-                        </span>
-                        <span className="text-xs text-slate-500 font-medium">
-                          ({track.topics.length} Sub-topics)
                         </span>
                       </div>
                       <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
