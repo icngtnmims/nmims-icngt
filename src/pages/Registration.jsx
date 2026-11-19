@@ -26,7 +26,7 @@ const Registration = () => {
   ];
 
   const importantNotes = [
-    "NMIMS/SVKM students/faculties are not required to pay GST",
+
     "Group registration of 10 from a single institute will qualify for 10% Discount",
     "The co-author if any, willing to participate in the conference has to only pay registration/early bird/spot registration fee as per category.",
   ];
@@ -46,10 +46,7 @@ const Registration = () => {
         {/* Important Note */}
         <InfoCard className="bg-yellow-50 border-l-4 border-yellow-500">
           <p className="text-sm md:text-base">
-            <strong>Note:</strong> Abstracts if accepted, author/ co-author has
-            to register for the event, failing which presentations will not be
-            permitted/ included in the abstract book. One author is allowed to
-            present as corresponding or presenting author.
+            <strong>Note:</strong> If an abstract is accepted, the author/co-author must register for the event. Otherwise, the presentation will not be permitted, and the abstract will not be included in the abstract book. Any one of the authors may present the paper.
           </p>
         </InfoCard>
 
@@ -109,28 +106,6 @@ const Registration = () => {
             </button>
             <p className="text-xs text-gray-400 mt-1">* Will be available soon</p>
           </div>
-        </section>
-
-        {/* Publication Fees Section */}
-        <section>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4 text-red-700">
-            Fees for Conference Proceedings with Taylor & Francis Publication
-          </h2>
-
-          <InfoCard className="mb-6">
-            <p className="text-sm md:text-base">
-              If the full length paper is accepted for Taylor & Francis
-              proceedings publication which will be recommended for Scopus
-              Indexing, an additional processing fees of{" "}
-              <strong>INR 5000</strong> shall be required to be paid in addition
-              to conference registration fees.
-            </p>
-          </InfoCard>
-
-          <p className="text-sm md:text-base mb-6">
-            <strong>Fees include:</strong> Conference kit, certificate, all
-            plenary sessions, conference day meals.
-          </p>
         </section>
 
         {/* Payment Details Section */}

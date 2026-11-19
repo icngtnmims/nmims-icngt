@@ -85,7 +85,7 @@ const sections = [
       },
       {
         name: "Dr. Gagandeep Kaur",
-        designation: "Assistant Professor, Artificial Intelligence and Machine Learning",
+        designation: "Associate Professor, Artificial Intelligence and Machine Learning",
       },
       {
         name: "Dr. Naziya Hussain",
