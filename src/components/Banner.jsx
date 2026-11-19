@@ -19,7 +19,7 @@ const Banner = () => {
           <p className="mt-1 text-sm sm:text-lg md:text-2xl">
             MPTP Shirpur, India
           </p>
-          <p className="mt-1 text-sm sm:text-lg md:text-2xl uppercase tracking-wide text-red-700">
+          <p className="mt-1 text-xs sm:text-base md:text-xl text-red-700">
             Hybrid Mode
           </p>
         </div>
