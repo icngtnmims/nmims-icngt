@@ -134,13 +134,13 @@ const CallForPapers = () => {
       {/* Overview Paragraphs Card */}
       <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 mb-12 space-y-5 text-slate-700 leading-relaxed text-justify text-sm sm:text-base">
         <p>
-          The <strong className="text-slate-900">International Conference on Next Generation Technologies (ICNGT–2027)</strong> invites original, unpublished, and high-quality research contributions from scholars, researchers, academicians, scientists, developers, engineers, students, industry professionals, practitioners, policymakers, and technology enthusiasts from India and across the world. The conference welcomes research articles, review papers, case studies, empirical studies, technological innovations, and application-oriented research for presentation and possible publication.
+          The International Conference on Next Generation Technologies for Sustainable Development (ICNGT-2027) aims to provide an international platform for researchers, engineers, academicians, scientists, and industry professionals to present their research findings, share innovative ideas, and discuss recent advancements in emerging technologies. The conference focuses on the role of Next-Generation Artificial Intelligence and Intelligent Computing in addressing contemporary challenges and promoting sustainable and resilient development.
         </p>
         <p>
-          <strong className="text-slate-900">ICNGT–2027</strong> aims to provide a multidisciplinary platform for exploring how Artificial Intelligence (AI), emerging digital technologies, advanced engineering systems, biotechnology, healthcare innovations, and sustainable technologies can contribute to a more inclusive, resilient, resource-efficient, and sustainable future.
+          ICNGT-2027 encourages interdisciplinary discussions and knowledge exchange across diverse domains, including Artificial Intelligence, Computer Science, Engineering, Healthcare, Agriculture, Energy, Environmental Sustainability, Smart Infrastructure, and other emerging technological areas. It also provides an opportunity to explore current developments, discuss practical applications, identify research challenges, and foster collaborations between academia, industry, and research communities.
         </p>
         <p>
-          The conference places <strong className="text-slate-900">Artificial Intelligence at the core</strong> of Next Generation Technologies, with particular emphasis on responsible and meaningful applications of AI for addressing environmental, economic, industrial, agricultural, healthcare, educational, and societal challenges. Contributions are encouraged to demonstrate innovative methodologies, practical applications, interdisciplinary approaches, intelligent decision-making, technological convergence, and measurable contributions to sustainability and quality of life.
+          The conference will feature invited talks by experts, technical paper presentations, and interactive discussions, bringing together participants from across the world to exchange knowledge and explore innovative solutions for a sustainable and resilient future.
         </p>
       </div>
 
