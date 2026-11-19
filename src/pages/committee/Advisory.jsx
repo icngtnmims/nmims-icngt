@@ -11,8 +11,6 @@ const internationalMembers = [
   { name: "Dr. Manoj Kumar", university: "University of Wollongong in Dubai", state: "Dubai", country: "UAE" },
   { name: "Dr. Muhammad Fazal Ijaz", university: "Torrens University Australia", state: "", country: "Australia" },
   { name: "Dr. Nitin", university: "University of Cincinnati", state: "Ohio", country: "USA" },
-  { name: "Dr. Sashikala Mishra", university: "The University of Western Australia", state: "Western Australia", country: "Australia" },
-  { name: "Dr. Shilpa Gite", university: "University of York", state: "", country: "" },
   { name: "Dr. Vidy Potdar", university: "Curtin University", state: "Western Australia", country: "Australia" },
   { name: "Dr. Vishnu S. Pendyala", university: "San José State University", state: "California", country: "USA" },
   { name: "Dr. Vilas Gaidhane", university: "Birla Institute of Technology and Science, Pilani, Dubai Campus", state: "Dubai", country: "UAE" },
@@ -54,6 +52,8 @@ const indianMembers = [
   { name: "Dr. Sateesh Kumar Peddoju", university: "Indian Institute of Technology, Roorkee", state: "Uttarakhand", country: "India" },
   { name: "Dr. Vimal Bhatia", university: "Indian Institute of Technology, Indore", state: "Madhya Pradesh", country: "India" },
   { name: "Dr. Vishal Satpute", university: "Visvesvaraya National Institute of Technology, Nagpur", state: "Maharashtra", country: "India" },
+  { name: "Dr. Sashikala Mishra", university: "The University of Western Australia, Mumbai Campus", state: "Maharashtra", country: "India" },
+  { name: "Dr. Shilpa Gite", university: "University of York, Mumbai Campus", state: "Maharashtra", country: "India" },
   { name: "Dr. Subhayu Das", university: "Partnership and Marketing Department", state: "", country: "" },
 ];
 
