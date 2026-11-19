@@ -82,27 +82,29 @@ const Home = () => {
             </h3>
             <p className="text-base md:text-lg leading-relaxed mb-4">
               Participants in the International Conference on Next Generation
-              Technologies for Sustainable Developments (ICNGT-2027) will:
+              Technologies for Sustainable Development (ICNGT-2027) will:
             </p>
             <ul className="list-disc list-inside space-y-2 text-base md:text-lg leading-relaxed ml-4">
               <li>
-                Gain insights of cutting-edge digital technologies and their
-                practical applications.
+                <span className="font-semibold">Gain insights into emerging technologies:</span> Explore recent advancements in Artificial Intelligence, Machine Learning, Generative AI, Agentic AI, Intelligent Computing and other next-generation technologies and their real-world applications.
               </li>
               <li>
-                Network peers, industry leaders, and experts in the field.
+                <span className="font-semibold">Explore interdisciplinary applications:</span> Understand how AI and intelligent computing can address challenges in sustainable agriculture, healthcare, clean energy, climate intelligence, environmental sustainability, smart infrastructure and industrial development.
               </li>
               <li>
-                Collaborate on interdisciplinary projects and research
-                initiatives.
+                <span className="font-semibold">Exchange research and innovations:</span> Share research findings, innovative algorithms, computational models, intelligent systems and technological solutions through technical presentations and expert interactions.
               </li>
               <li>
-                Influence policy discussions on the responsible and ethical use
-                of digital technology.
+                <span className="font-semibold">Promote responsible and trustworthy AI:</span> Engage in discussions on explainable, ethical, secure and responsible AI, including data privacy, AI governance, fairness and societal impact.
               </li>
               <li>
-                Explore partnerships and business opportunities in emerging
-                digital markets.
+                <span className="font-semibold">Foster academic–industry collaboration:</span> Build professional networks with researchers, academicians, industry experts and technology practitioners to encourage collaborative research and innovation.
+              </li>
+              <li>
+                <span className="font-semibold">Identify future research opportunities:</span> Explore emerging research directions, interdisciplinary challenges and opportunities for technology-driven sustainable and resilient development.
+              </li>
+              <li>
+                <span className="font-semibold">Encourage partnerships and innovation:</span> Identify opportunities for academic–industry partnerships, joint research initiatives, technology transfer and innovation-driven collaborations.
               </li>
             </ul>
           </div>
