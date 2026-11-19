@@ -61,33 +61,17 @@ const Home = () => {
             <h2 className="text-xl sm:text-2xl font-bold mb-4 text-red-700">
               About the Conference
             </h2>
-            <p className="text-base md:text-lg leading-relaxed">
-              The International Conference on Next Generation Technologies for
-              Sustainable Developments (ICNGT-2027) is a landmark event that
-              brings together experts, innovators, and thought leaders worldwide
-              to discuss and envision the transformative potential of digital
-              technology in three critical sectors: education, healthcare, and
-              industry. In an era marked by unprecedented technological
-              advancements, this conference is a platform to explore how digital
-              technology can shape the future, foster innovation, and address
-              pressing global challenges.
+            <p className="text-base md:text-lg leading-relaxed mb-4">
+              The International Conference on Next Generation Technologies for Sustainable Development (ICNGT-2027) aims to provide an international platform for researchers, academicians, scientists, industry professionals, innovators and technology practitioners to present and exchange innovative research, share knowledge and foster interdisciplinary collaboration in emerging technologies and their transformative applications.
             </p>
-          </div>
-
-          {/* Conference Overview */}
-          <div>
-            <h3 className="text-xl sm:text-2xl font-bold mb-4 text-red-700">
-              Conference Overview
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed">
-              International Conference on Next Generation Technologies for
-              Sustainable Developments (ICNGT-2027) is designed to foster
-              collaboration and knowledge exchange among researchers, industry
-              professionals, policy makers, and educators. The event spans two
-              days and features keynote presentations, panel discussions,
-              workshops, and interactive sessions, providing attendees with a
-              comprehensive understanding of the digital landscape's current
-              state and future possibilities.
+            <p className="text-base md:text-lg leading-relaxed mb-4">
+              Under the central theme “Next-Generation Artificial Intelligence and Intelligent Computing for Sustainable Development”, the conference emphasizes the role of Artificial Intelligence and next-generation technologies as key enablers of innovation and sustainable development. It explores the convergence of Artificial Intelligence, Machine Learning, Generative AI, Data Science, Internet of Things, Cloud and Edge Computing, Computer Vision, Robotics, Cybersecurity and other emerging technologies.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed mb-4">
+              The conference focuses on the technological advancements addressing the contemporary challenges across diverse domains, including sustainable agriculture, healthcare, clean energy, environmental sustainability, smart infrastructure, advanced manufacturing, education and societal development. It encourages original research contributions encompassing innovative algorithms, computational models, intelligent systems, technological frameworks, experimental investigations and validated real-world applications.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed mb-4">
+              Through keynote lectures, technical paper presentations, expert interactions and collaborative research discussions, ICNGT-2027 seeks to promote cross-disciplinary perspectives, strengthen academic–industry partnerships and encourage responsible technological innovation. The conference aspires to facilitate the exchange of ideas and the development of innovative, practical and sustainable solutions to address emerging societal, environmental and industrial challenges.
             </p>
           </div>
 
