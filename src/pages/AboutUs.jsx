@@ -33,7 +33,7 @@ const AboutUs = () => (
           SVKM's NMIMS, a premier Indian university, has evolved significantly
           since its inception in 1981. Starting with a Master's in Management
           Studies with 40 students, it now boasts 7 faculty/departments running
-          17 specialized schools with more than 29,000 students and about 1550
+          17 specialized schools with more than 32,000 students and about 1550
           full-time faculty members. The consistent academic quality, research
           focus, faculty from top national and global institutes, and strong
           industry linkages at NMIMS have placed it amongst the nation's prime
@@ -44,13 +44,20 @@ const AboutUs = () => (
         <h2 className="text-xl sm:text-2xl font-bold mb-2 text-red-700">
           NMIMS Shirpur Campus - Mukesh Patel Technology Park (MPTP)
         </h2>
+        <p className="text-base md:text-lg mb-4">
+          SVKM’s NMIMS, Shirpur Campus – Mukesh Patel Technology Park (MPTP) is a multidisciplinary campus committed to academic excellence, research, innovation and industry-oriented education. NMIMS offers diverse academic programmes spanning Engineering, Technology, Pharmacy, Agriculture, Management and other disciplines.
+        </p>
+        <p className="text-base md:text-lg mb-4">
+          NMIMS (Deemed-to-be University) is accredited with A++ Grade by the National Assessment and Accreditation Council (NAAC) and recognised as a Category-I University by the Government of India. The Shirpur Campus is approved by the All India Council for Technical Education (AICTE), while its Pharmacy programmes are approved by the Pharmacy Council of India (PCI). The Bachelor of Pharmacy (B.Pharm) programme has received six years of accreditation from the National Board of Accreditation (NBA), covering 2022–23 to 2027–28.
+        </p>
+        <p className="text-base md:text-lg mb-4">
+          Located in the picturesque surroundings of Shirpur, Maharashtra, the campus offers modern academic and research infrastructure, well-equipped laboratories, a central library, sports facilities and residential amenities. The campus also promotes environmental sustainability through its green campus initiatives.
+        </p>
+        <p className="text-base md:text-lg mb-4">
+          Its notable achievements include the Dewang Mehta National Education Award for Best Educational Campus and the Green Environment Campus Award. Further strengthening its innovation ecosystem, the Institution’s Innovation Council (IIC) of the School of Pharmacy & Technology Management (SPTM) and Mukesh Patel School of Technology Management and Engineering (MPSTME), NMIMS Shirpur Campus, has been awarded a prestigious 3.5-Star Rating for the Academic Year 2024–25, marking the first year of the campus IIC's establishment. The rating was declared by the Ministry of Education’s Innovation Cell, Government of India, on 5 October 2026.
+        </p>
         <p className="text-base md:text-lg">
-          SVKM’s NMIMS, Shirpur Campus-MPTP is approved by AICTE, UGC and
-          accredited A+ by NAAC, offers industry-oriented programs in
-          Engineering, Pharmacy, Agriculture, and Textile. The picturesque
-          campus boasts excellent research infrastructure and inter-disciplinary
-          education. Located at Shirpur, of Dhule district in Maharashtra,
-          India, it has won “Dewang Mehta National Education Best Campus Award”.
+          With its emphasis on interdisciplinary education, research, innovation and sustainability, NMIMS Shirpur provides a vibrant environment for academic exchange, technological advancement and collaborative research.
         </p>
       </section>
       <section>
