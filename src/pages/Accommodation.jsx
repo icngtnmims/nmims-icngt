@@ -123,7 +123,7 @@ const Accommodation = () => {
                 Maharashtra, India.
               </p>
               <p>
-                <strong>RTGS/NEFT/IFS Code:</strong> HDFC0001387
+                <strong>RTGS/NEFT/IFSC Code:</strong> HDFC0001387
               </p>
               <p>
                 <strong>MICR Code:</strong> 425240052

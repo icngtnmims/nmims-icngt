@@ -56,23 +56,23 @@ const sections = [
     items: [
       {
         name: "Dr. Nitin Choubey",
-        designation: "Head of Department, Computer Science",
+        designation: "Head of Department, Computer Science Department",
       },
       {
         name: "Dr. Suresh Kurumbanshi",
-        designation: "Head of Department, Computer Engineering",
+        designation: "Head of Department, Computer Engineering Department",
       },
       {
         name: "Dr. Srikanth Pulipeti",
-        designation: "Head of Department, Information Technology",
+        designation: "Head of Department, Information Technology Department",
       },
       {
         name: "Dr. Praveen Kumar Loharkar",
-        designation: "Head of Department, Artificial Intelligence and Machine Learning",
+        designation: "Head of Department, Artificial Intelligence and Machine Learning Department",
       },
       {
         name: "Dr. Bipin Jadhav",
-        designation: "Head of Department, Basic Science and Humanities",
+        designation: "Head of Department, Basic Science and Humanities Department",
       },
     ],
   },
@@ -81,19 +81,19 @@ const sections = [
     items: [
       {
         name: "Dr. Rashmi Sharma",
-        designation: "Professor, Computer Engineering",
+        designation: "Professor, Computer Engineering Department",
       },
       {
         name: "Dr. Gagandeep Kaur",
-        designation: "Associate Professor, Artificial Intelligence and Machine Learning",
+        designation: "Associate Professor, Artificial Intelligence and Machine Learning Department",
       },
       {
         name: "Dr. Naziya Hussain",
-        designation: "Assistant Professor, Computer Engineering",
+        designation: "Assistant Professor, Computer Engineering Department",
       },
       {
         name: "Dr. Durgesh Sharma",
-        designation: "Assistant Professor, Computer Engineering",
+        designation: "Assistant Professor, Computer Engineering Department",
       },
     ],
   },

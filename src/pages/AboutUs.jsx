@@ -65,21 +65,17 @@ const AboutUs = () => (
           Mukesh Patel School of Technology Management & Engineering (MPSTME),
           Shirpur
         </h2>
+        <p className="text-base md:text-lg mb-4">
+          Established in 2007, Mukesh Patel School of Technology Management & Engineering (MPSTME), Shirpur, is committed to excellence in engineering and technology education through an integrated approach that combines technical expertise with management principles. The School focuses on developing industry-ready professionals equipped with the knowledge and skills to address emerging technological and societal challenges.
+        </p>
+        <p className="text-base md:text-lg mb-4">
+          MPSTME offers undergraduate and integrated programmes in Computer Science, Computer Engineering, Information Technology, Artificial Intelligence and Machine Learning, and Data Science. Its academic approach emphasises experiential learning, industry interaction, practical training and technology-driven innovation.
+        </p>
+        <p className="text-base md:text-lg mb-4">
+          The School provides modern learning and research facilities, including the BOSCH Rexroth Centre for Excellence in Automation, IoT laboratories and 3D printing facilities. It also promotes industry-academia collaboration through value-added training programmes with organisations such as IBM, TCS and Accenture, along with a Vertically Integrated Project Consortium in collaboration with Virginia Tech University, USA.
+        </p>
         <p className="text-base md:text-lg">
-          Mukesh Patel School of Technology Management and Engineering (MPSTME)
-          is renowned for offering an exceptional blend of academic rigour,
-          cutting-edge technology, and industry-relevant education. The
-          institute is equipped with state-of-the-art infrastructure, including
-          advanced laboratories, innovation hubs, and smart classrooms,
-          providing students with hands-on learning experiences, fostering deep
-          learning, innovation, and research. MPSTME is committed to excellence
-          in research, with a growing emphasis on industry-academic
-          collaborations by partnering with leading tech companies, research
-          institutions, and international universities, ensuring global best
-          practices with the latest technological advancements. MPSTME Shirpur
-          stands as one of the premier Engineering and Management schools in
-          India with its industry-driven education, world-class facilities, and
-          strategic collaborations.
+          Through its emphasis on emerging technologies, applied research, innovation, entrepreneurship and interdisciplinary collaboration, MPSTME Shirpur strives to prepare future professionals and contribute to technological advancement.
         </p>
       </section>
       <section>
