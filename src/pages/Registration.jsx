@@ -82,6 +82,10 @@ const Registration = () => {
                 ))}
               </tbody>
             </table>
+            <p className="text-sm md:text-base mt-3">
+              * <strong>Fees include:</strong> Conference kit, certificate, all
+              plenary sessions, conference day meals.
+            </p>
           </div>
 
           <div className="space-y-3 mb-6">
