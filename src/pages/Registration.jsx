@@ -31,11 +31,6 @@ const Registration = () => {
     "The co-author if any, willing to participate in the conference has to only pay registration/early bird/spot registration fee as per category.",
   ];
 
-  const registrationRequirements = [
-    "Online NEFT Payment Reference No. and Receipt",
-    'Transaction Photocopy with remarks as "ICNGT-2027"',
-  ];
-
   return (
     <div className="container mx-auto px-4 py-8 sm:px-6 md:px-8">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 text-red-700">
@@ -136,7 +131,7 @@ const Registration = () => {
                 MAHARASHTRA, INDIA.
               </p>
               <p>
-                <strong>RTGS/NEFT/IFS Code:</strong> HDFC0001387
+                <strong>RTGS/NEFT/IFSC Code:</strong> HDFC0001387
               </p>
               <p>
                 <strong>MICR Code:</strong> 425240052
@@ -145,21 +140,22 @@ const Registration = () => {
           </InfoCard>
         </section>
 
-        {/* Successful Registration Section */}
+        {/* Registration Process Section */}
         <section>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-red-700">
-            Successful Registration
+            Registration Process
           </h2>
 
-          <p className="text-sm md:text-base mb-4">
-            For successful registration please keep the following ready:
-          </p>
-
-          <ul className="list-disc list-inside space-y-2 mb-6 text-sm md:text-base ml-4">
-            {registrationRequirements.map((requirement, index) => (
-              <li key={index}>{requirement}</li>
-            ))}
-          </ul>
+          <ol className="list-decimal list-inside space-y-2 mb-6 text-sm md:text-base ml-4">
+            <li>
+              Pay the applicable registration fee through NEFT/RTGS or bank
+              transfer.
+            </li>
+            <li>Complete the online registration form.</li>
+            <li>Enter the UTR/Transaction Reference Number.</li>
+            <li>Upload the payment receipt as proof of payment.</li>
+            <li>Submit the registration form.</li>
+          </ol>
 
           <div className="text-center">
             <button
