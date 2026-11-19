@@ -56,23 +56,23 @@ const sections = [
     items: [
       {
         name: "Dr. Nitin Choubey",
-        designation: "HOD Computer Science",
+        designation: "Head of Department, Computer Science",
       },
       {
         name: "Dr. Suresh Kurumbanshi",
-        designation: "HOD Computer Engineering",
+        designation: "Head of Department, Computer Engineering",
       },
       {
         name: "Dr. Srikanth Pulipeti",
-        designation: "HOD Information Technology",
+        designation: "Head of Department, Information Technology",
       },
       {
         name: "Dr. Praveen Kumar Loharkar",
-        designation: "HOD Artificial Intelligence and Machine Learning",
+        designation: "Head of Department, Artificial Intelligence and Machine Learning",
       },
       {
         name: "Dr. Bipin Jadhav",
-        designation: "HOD Basic Science and Humanities",
+        designation: "Head of Department, Basic Science and Humanities",
       },
     ],
   },
