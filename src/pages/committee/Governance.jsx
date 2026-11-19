@@ -4,7 +4,7 @@ import { User } from "lucide-react";
 const chiefPatrons = [
   {
     name: "Shri. Amrish Patel",
-    role: "Hon. President, SVKM and Chancellor, NMIMS University • India",
+    role: "Hon. President, SVKM and Chancellor, NMIMS University, India",
     img: "/committee/amrish-patel.png",
   },
   {
@@ -37,32 +37,32 @@ const patrons = [
   },
   {
     name: "Prof. Sougata Ray",
-    role: "Vice Chancellor, NMIMS University • India",
+    role: "Vice Chancellor, NMIMS University, India",
     img: "/committee/sougata-ray.png",
   },
   {
     name: "Dr. Sharad Mhaiskar",
-    role: "Provost (Administration), NMIMS University • India",
+    role: "Provost (Administration), NMIMS University, India",
     img: "/committee/sharad-mhaiskar.png",
   },
   {
     name: "Dr. Meena Chintamaneni",
-    role: "Pro Vice Chancellor, NMIMS University • India",
+    role: "Pro Vice Chancellor, NMIMS University, India",
     img: "/committee/meena-chintamaneni.png",
   },
   {
     name: "Dr. Abhishek Ranjan",
-    role: "Pro Vice Chancellor, NMIMS University • India",
+    role: "Pro Vice Chancellor, NMIMS University, India",
     img: "/committee/abhishek-ranjan.png",
   },
   {
     name: "Prof. Seema Mahajan",
-    role: "Pro Vice Chancellor & Director (PDSE&FB), NMIMS University • India",
+    role: "Pro Vice Chancellor & Director (PDSE&FB), NMIMS University, India",
     img: "/committee/seema-mahajan.png",
   },
   {
     name: "Dr. Tanmoy Chakraborty",
-    role: "Registrar, NMIMS University • India",
+    role: "Registrar, NMIMS University, India",
     img: "/committee/tanmoy-chakraborty.png",
   },
 ];
