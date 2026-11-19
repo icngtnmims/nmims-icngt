@@ -110,8 +110,7 @@ const Registration = () => {
           </h2>
 
           <p className="text-sm md:text-base mb-4">
-            Through NEFT/RTGS/ fund transfer to account as per details given
-            below:
+            Participants can pay the applicable registration fee through NEFT, RTGS or bank transfer using the following bank account details.
           </p>
 
           <InfoCard className="bg-gray-50 mb-6">
