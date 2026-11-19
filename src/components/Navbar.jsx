@@ -79,7 +79,7 @@ const Navbar = () => {
               <Link to="/gallery">Gallery</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -199,7 +199,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/contact" className="hover:opacity-70 transition-opacity">
-              Contact
+              Contact Us
             </Link>
           </li>
         </ul>

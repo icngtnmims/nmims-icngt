@@ -3,8 +3,8 @@ import InfoCard from "../components/ui/InfoCard";
 
 const Contact = () => {
   const contactPersons = [
-    { name: "Dr. Preeti Sangave", phone: "+91 8369413913" },
-    { name: "Dr. Shashikant Bagade", phone: "+91 9637474753" },
+    { name: "Dr. Rashmi Sharma", phone: "+91 70602 49966" },
+    { name: "Dr. Gagandeep Kaur", phone: "+91 70308 38388" },
   ];
 
   return (
@@ -43,7 +43,7 @@ const Contact = () => {
                       />
                     </svg>
                     <a
-                      href={`tel:${person.phone}`}
+                      href={`tel:${person.phone.replace(/\s/g, "")}`}
                       className="hover:text-red-700"
                     >
                       {person.phone}
