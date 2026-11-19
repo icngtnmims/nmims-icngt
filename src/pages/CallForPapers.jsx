@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp, BrainCircuit, Sparkles, Eye, Bot, ShieldCheck, Leaf, HelpCircle } from "lucide-react";
+import { ChevronDown, ChevronUp, BrainCircuit, Sparkles, Eye, Bot, ShieldCheck, Leaf, } from "lucide-react";
 
 const CallForPapers = () => {
   // Track open/close state (null = none open, or index)
@@ -127,7 +127,7 @@ const CallForPapers = () => {
           Call for Papers
         </h1>
         <p className="text-base sm:text-xl font-bold text-slate-800 max-w-3xl mx-auto pt-2">
-          Artificial Intelligence for a Sustainable and Resilient Future
+          Next-Generation Artificial Intelligence and Intelligent Computing for Sustainable Development
         </p>
       </div>
 
@@ -231,26 +231,6 @@ const CallForPapers = () => {
             );
           })}
         </div>
-      </div>
-
-      {/* Cross-Cutting Theme Block */}
-      <div className="bg-gradient-to-br from-red-800 to-red-950 text-white rounded-2xl p-6 sm:p-8 shadow-lg space-y-4">
-        <div className="flex items-center gap-2">
-          <HelpCircle className="w-5 h-5 text-red-300 shrink-0" />
-          <h3 className="text-lg sm:text-xl font-bold tracking-wide uppercase text-red-200">
-            Cross-Cutting Theme
-          </h3>
-        </div>
-
-        <div className="p-4 sm:p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
-          <p className="text-base sm:text-xl font-semibold text-center italic leading-relaxed text-red-50">
-            «How can Artificial Intelligence and Next Generation Technologies be designed and deployed responsibly to create a more sustainable, resilient and inclusive future?»
-          </p>
-        </div>
-
-        <p className="text-xs sm:text-sm text-red-100 leading-relaxed text-justify pt-1">
-          Across all six tracks, ICNGT–2027 particularly encourages research addressing this core question. Research demonstrating real-world impact, interdisciplinary collaboration, technology transfer, scalable solutions, and alignment with the Sustainable Development Goals (SDGs) is especially welcome.
-        </p>
       </div>
     </div>
   );
