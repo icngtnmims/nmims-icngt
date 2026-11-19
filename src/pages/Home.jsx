@@ -108,20 +108,6 @@ const Home = () => {
               </li>
             </ul>
           </div>
-
-          {/* Closing Statement */}
-          <div>
-            <p className="text-base md:text-lg leading-relaxed">
-              International Conference on Next Generation Technologies for
-              Sustainable Developments (ICNGT-2027) serves as a catalyst for
-              envisioning a future where digital technology revolutionizes
-              education, healthcare, and industry. By bringing together diverse
-              stakeholders, this conference fosters collaboration and
-              innovation, driving us toward a future where digital technology
-              enhances the quality of life, supports sustainable development,
-              and addresses most pressing challenges.
-            </p>
-          </div>
         </div>
       </div>
     </div>
