@@ -1,3 +1,78 @@
+Conversation Log
+https://github.com/icngtnmims/nmims-icngt.git Install this GitHub repository and run it on localhost. 
+
+I have started cloning the repository https://github.com/icngtnmims/nmims-icngt.git into the workspace. I'll proceed with installing dependencies and starting the application once the clone finishes.
+
+Running npm install to install project dependencies. I will update you as soon as this completes.
+
+Verifying the project build to ensure all dependencies and configurations are working properly...
+
+The repository nmims-icngt
+ has been cloned, dependencies installed, and the application is now running on localhost.
+
+Summary of Actions Taken:
+Cloned Repository: Downloaded files into c:\Users\rashmi\ICNGT-2027-website-code.
+Installed Dependencies: Installed all packages via npm install (package.json).
+Build Verification: Verified production build using Vite.
+Started Dev Server: Launched the development server.
+Local Server URL:
+Local: http://localhost:5173/
+Remove background color
+Previous-Conference-Publication   [Red Font]
+Explore publications associated with conferences and academic initiatives at NMIMS Shirpur, showcasing research contributions and interdisciplinary advancements in emerging technologies. [black font]
+continue
+
+The hero section in PreviousProceedings.jsx has been updated:
+
+Changes Made:
+Removed Background Color: Removed the dark blue gradient background on .pub-hero (background: transparent;).
+Title Styling:
+Set to Red Font (color: #b91c1c;, consistent with the site-wide text-red-700 theme).
+Heading text updated to: Previous Conference Publication (or let me know if you prefer the hyphenated format Previous-Conference-Publication or plural Previous Conference Publications).
+Description Styling:
+Set to Black Font (color: #000000;).
+Eyebrow: Removed the yellow eyebrow label above the heading for a cleaner look that matches the rest of the site.
+
+The Vite dev server automatically reloaded via HMR and the changes are live on:
+
+Local URL: http://localhost:5173/previous-proceedings
+in this publicatons previos proceedings make the entere thing red and bllack or black bold and red bold make it the theme of the home section
+
+The entire Previous Proceedings page (PreviousProceedings.jsx) has been updated to adopt the Red & Black / Bold Black & Bold Red theme of the Home section:
+
+Theming Details Applied:
+Hero Header:
+Title: Bold Red (#b91c1c, font-weight: 800).
+Subtitle: Clean Black (#000000, font-weight: 500).
+Background: Transparent / none (no dark blue gradient).
+Section Headings:
+Eyebrows (ICNGT, Other Conference Publications): Bold Red uppercase.
+Headings (Next Generation Technologies, ICDTV-2030): Bold Red (#b91c1c, font-weight: 800).
+Descriptions: Clean Black text.
+Publication Cards:
+Category Badge: Red badge with light red background (#fef2f2), red border, and Bold Red text (#b91c1c).
+Book Title (h3): Bold Black (#000000, font-weight: 800).
+Card Border: Clean subtle border with red highlight on hover and Bold Red border on featured card.
+Metadata & Details Table:
+Labels (Conference, Proceedings published, ISBN, Publisher, Editors): Bold Black (font-weight: 800; color: #000000).
+ISBN: Bold Red (#b91c1c).
+Indexing Status: Bold Black label with Bold Red (Not indexed.) status.
+Action Buttons:
+Primary Link (View Publication): Solid Red button (#b91c1c) with white text and hover elevation.
+Secondary Links (Conference Website, View Conference Report): Bold Black outline button (1.5px solid #000000) with black-to-white hover inversion.
+Information Note:
+Left accent border: Bold Red (4px solid #b91c1c).
+Background: Soft light-red tint (#fef2f2).
+Text: Black with Bold Red label and highlighted ISBN.
+
+The development server has updated via Vite HMR and is live at:
+
+Local URL: http://localhost:5173/previous-proceedings
+Tell me the name of files where you have done changes. 
+
+The changes were made exclusively in:
+
+src/pages/PreviousProceedings.jsx
 
 import React from "react";
 
@@ -38,465 +113,3 @@ const ArrowIcon = () => (
     height="16"
     viewBox="0 0 24 24"
     fill="none"
-    aria-hidden="true"
-  >
-    <path
-      d="M7 17L17 7M7 7h10v10"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-function PublicationCard({ publication, featured = false }) {
-  return (
-    <article className={`publication-card ${featured ? "featured" : ""}`}>
-      <div className="publication-cover">
-        <img
-          src={publication.image}
-          alt={`${publication.title} book cover`}
-          className="publication-cover-image"
-          loading="lazy"
-        />
-      </div>
-
-      <div className="publication-content">
-        <span className="publication-label">
-          {publication.label || "ISBN Proceedings"}
-        </span>
-
-        <h3>{publication.title}</h3>
-
-        <p className="publication-description">
-          {publication.description}
-        </p>
-
-        {publication.shortTitle && (
-          <div className="publication-details">
-            <div className="detail-row">
-              <span>Conference</span>
-              <strong>{publication.dates}</strong>
-            </div>
-
-            <div className="detail-row">
-              <span>Proceedings published</span>
-              <strong>{publication.publicationYear}</strong>
-            </div>
-
-            <div className="detail-row">
-              <span>ISBN</span>
-              <strong>{publication.isbn}</strong>
-            </div>
-
-            <div className="detail-row">
-              <span>Publisher</span>
-              <strong>{publication.publisher}</strong>
-            </div>
-
-            <div className="detail-row">
-              <span>Editors</span>
-              <strong>{publication.editors}</strong>
-            </div>
-          </div>
-        )}
-
-        {publication.shortTitle && (
-          <p className="indexing-note">
-            Indexing status: Not indexed.
-          </p>
-        )}
-
-        <div className="publication-actions">
-          {publication.url && (
-            <a
-              className="primary-link"
-              href={publication.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Publication <ArrowIcon />
-            </a>
-          )}
-
-          {publication.conferenceUrl && (
-            <a
-              className="secondary-link"
-              href={publication.conferenceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Conference Website <ArrowIcon />
-            </a>
-          )}
-
-          {publication.reportUrl && (
-            <a
-              className="secondary-link"
-              href={publication.reportUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Conference Report <ArrowIcon />
-            </a>
-          )}
-        </div>
-      </div>
-    </article>
-  );
-}
-
-export default function PreviousProceedings() {
-  return (
-    <main className="previous-publications">
-      <style>{`
-        .previous-publications {
-          --pub-primary: #123b65;
-          --pub-accent: #c99a43;
-          --pub-text: #263445;
-          --pub-muted: #657386;
-          width: 100%;
-          color: var(--pub-text);
-          font-family: inherit;
-        }
-
-        .pub-hero {
-          padding: 76px 24px 68px;
-          text-align: center;
-          background:
-            radial-gradient(circle at 15% 15%, rgba(201,154,67,.16), transparent 30%),
-            linear-gradient(135deg, #102f50, #174b75);
-          color: #fff;
-        }
-
-        .pub-hero-inner {
-          max-width: 900px;
-          margin: 0 auto;
-        }
-
-        .pub-eyebrow {
-          display: inline-block;
-          margin-bottom: 16px;
-          color: #e9c47e;
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: 2.5px;
-          text-transform: uppercase;
-        }
-
-        .pub-hero h1 {
-          margin: 0;
-          font-size: clamp(32px, 5vw, 48px);
-          line-height: 1.15;
-          font-weight: 750;
-          color: #fff;
-        }
-
-        .pub-hero p {
-          max-width: 720px;
-          margin: 20px auto 0;
-          color: rgba(255,255,255,.82);
-          font-size: 16px;
-          line-height: 1.8;
-        }
-
-        .pub-container {
-          max-width: 1160px;
-          margin: 0 auto;
-          padding: 62px 24px 80px;
-        }
-
-        .pub-section {
-          margin-bottom: 64px;
-        }
-
-        .pub-section:last-child {
-          margin-bottom: 0;
-        }
-
-        .pub-section-heading {
-          margin-bottom: 26px;
-        }
-
-        .pub-section-heading span {
-          display: block;
-          margin-bottom: 9px;
-          color: #a77a2d;
-          font-size: 11px;
-          font-weight: 750;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-        }
-
-        .pub-section-heading h2 {
-          margin: 0;
-          color: var(--pub-primary);
-          font-size: clamp(24px, 3vw, 32px);
-          line-height: 1.25;
-        }
-
-        .pub-section-heading p {
-          max-width: 780px;
-          margin: 12px 0 0;
-          color: var(--pub-muted);
-          font-size: 15px;
-          line-height: 1.75;
-        }
-
-        .publication-card {
-          display: grid;
-          grid-template-columns: minmax(220px, 290px) minmax(0, 1fr);
-          gap: 34px;
-          padding: 28px;
-          background: #fff;
-          border: 1px solid #e3e9ef;
-          border-radius: 16px;
-          box-shadow: 0 8px 28px rgba(18,59,101,.06);
-          align-items: stretch;
-        }
-
-        .publication-cover {
-          min-height: 310px;
-          padding: 12px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #f8fafc;
-          border-radius: 9px;
-          overflow: hidden;
-        }
-
-        .publication-cover-image {
-          display: block;
-          width: 100%;
-          height: 310px;
-          object-fit: contain;
-          border-radius: 5px;
-        }
-
-        .publication-content {
-          min-width: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .publication-label {
-          display: inline-block;
-          margin-bottom: 12px;
-          padding: 6px 10px;
-          border-radius: 5px;
-          background: #f4f0e8;
-          color: #8b672c;
-          font-size: 11px;
-          font-weight: 750;
-          letter-spacing: .6px;
-          text-transform: uppercase;
-        }
-
-        .publication-content h3 {
-          margin: 0;
-          color: var(--pub-primary);
-          font-size: 21px;
-          line-height: 1.4;
-        }
-
-        .publication-description {
-          margin: 13px 0 18px;
-          color: var(--pub-muted);
-          font-size: 14px;
-          line-height: 1.75;
-        }
-
-        .publication-details {
-          width: 100%;
-          margin: 0 0 16px;
-          border-top: 1px solid #e8edf2;
-        }
-
-        .detail-row {
-          display: grid;
-          grid-template-columns: minmax(125px, 175px) minmax(0, 1fr);
-          gap: 12px;
-          padding: 10px 0;
-          border-bottom: 1px solid #e8edf2;
-          font-size: 13px;
-          line-height: 1.5;
-        }
-
-        .detail-row span {
-          color: var(--pub-muted);
-        }
-
-        .detail-row strong {
-          color: #34465a;
-          font-weight: 650;
-          overflow-wrap: anywhere;
-        }
-
-        .indexing-note {
-          margin: 0 0 18px;
-          color: #657386;
-          font-size: 12px;
-          line-height: 1.6;
-        }
-
-        .publication-actions {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-          margin-top: auto;
-          padding-top: 12px;
-        }
-
-        .publication-actions a {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          gap: 8px;
-          min-height: 40px;
-          padding: 9px 14px;
-          border-radius: 6px;
-          font-size: 12px;
-          font-weight: 700;
-          text-decoration: none;
-          transition: .2s ease;
-        }
-
-        .primary-link {
-          color: #fff;
-          background: var(--pub-primary);
-        }
-
-        .primary-link:hover {
-          background: #205582;
-          transform: translateY(-1px);
-        }
-
-        .secondary-link {
-          color: var(--pub-primary);
-          border: 1px solid #cbd7e2;
-          background: #fff;
-        }
-
-        .secondary-link:hover {
-          background: #f2f6fa;
-          border-color: #8ba6bf;
-        }
-
-        .pub-note {
-          margin-top: 24px;
-          padding: 18px 20px;
-          border-left: 3px solid var(--pub-accent);
-          border-radius: 4px;
-          background: #f7f8fa;
-          color: var(--pub-muted);
-          font-size: 13px;
-          line-height: 1.7;
-        }
-
-        @media (max-width: 720px) {
-          .pub-hero {
-            padding: 55px 20px;
-          }
-
-          .pub-container {
-            padding: 42px 16px 58px;
-          }
-
-          .publication-card {
-            grid-template-columns: 1fr;
-            gap: 24px;
-            padding: 18px;
-           
-          }
-
-          .publication-cover {
-            min-height: 280px;
-          }
-
-          .publication-cover-image {
-            height: 280px;
-          }
-
-          .detail-row {
-            grid-template-columns: 1fr;
-            gap: 3px;
-          }
-
-          .publication-actions {
-            flex-direction: column;
-            width: 100%;
-          }
-
-          .publication-actions a {
-            width: 100%;
-            box-sizing: border-box;
-          }
-        }
-      `}</style>
-
-      <section className="pub-hero">
-        <div className="pub-hero-inner">
-          <span className="pub-eyebrow">
-            Research • Innovation • Collaboration
-          </span>
-          <h1>Previous Conference Publications</h1>
-          <p>
-            Explore publications associated with conferences and academic
-            initiatives at NMIMS Shirpur, showcasing research contributions
-            and interdisciplinary advancements in emerging technologies.
-          </p>
-        </div>
-      </section>
-
-      <div className="pub-container">
-        <section className="pub-section">
-          <div className="pub-section-heading">
-            <span>ICNGT</span>
-            <h2>Next Generation Technologies</h2>
-            <p>
-              Explore the Taylor & Francis publication on next-generation
-              technologies and sustainable development.
-            </p>
-          </div>
-
-          <PublicationCard publication={publications.icngt} />
-        </section>
-
-        <section className="pub-section">
-          <div className="pub-section-heading">
-            <span>Other Conference Publications</span>
-            <h2>ICDTV-2030</h2>
-            <p>
-              A separate multidisciplinary conference publication from
-              NMIMS Shirpur, covering digital technology applications
-              across healthcare, education and industry.
-            </p>
-          </div>
-
-          <PublicationCard
-            publication={{
-              ...publications.icdtv,
-              label: "ISBN Proceedings",
-            }}
-            featured
-          />
-
-          <div className="pub-note">
-            <strong>Publication information:</strong> The ICDTV-2030
-            conference was held on 17–18 February 2024. Its proceedings
-            were published in 2026 with ISBN 978-81-967935-0-0.
-            The proceedings are not indexed. ICDTV-2030 is presented
-            separately and is not identified as a previous edition of
-            ICNGT.
-          </div>
-          
-
-
-        </section>
-      </div>
-    </main>
-  );
-}
