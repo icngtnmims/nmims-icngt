@@ -6,6 +6,7 @@ import AboutUs from "./pages/AboutUs.jsx";
 import Committee from "./pages/Committee.jsx";
 import CallForPapers from "./pages/CallForPapers.jsx";
 import Publication from "./pages/Publication";
+import PreviousProceedings from "./pages/PreviousProceedings";
 import Submission from "./pages/Submission.jsx";
 import ImpDates from "./pages/ImpDates.jsx";
 import Registration from "./pages/Registration.jsx";
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/committee/technical" element={<Technical />} />
           <Route path="/call-for-papers" element={<CallForPapers />} />
           <Route path="/publication" element={<Publication />} />
+          <Route path="/previous-proceedings" element={<PreviousProceedings />} />
           <Route path="/submission" element={<Submission />} />
           <Route path="/important-dates" element={<ImpDates />} />
           <Route path="/registration" element={<Registration />} />
