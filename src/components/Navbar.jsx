@@ -57,9 +57,21 @@ const Navbar = () => {
             <li>
               <Link to="/call-for-papers">Call for Papers</Link>
             </li>
-            <li>
-              <Link to="/publication">Publication</Link>
-            </li>
+           <li>
+  <details className="nav-dropdown">
+    <summary>Publication</summary>
+    <ul>
+      <li>
+        <Link to="/publication">Publication Information</Link>
+      </li>
+      <li>
+        <Link to="/previous-proceedings">
+          Previous Conference Proceedings
+        </Link>
+      </li>
+    </ul>
+  </details>
+</li>
             <li>
               <Link to="/submission">Submission</Link>
             </li>
