@@ -50,65 +50,22 @@ const ArrowIcon = () => (
   </svg>
 );
 
-const BookIcon = () => (
-  <svg
-    width="34"
-    height="34"
-    viewBox="0 0 24 24"
-    fill="none"
-    aria-hidden="true"
-  >
-    <path
-      d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M4 5.5V21M8 7h8M8 11h8"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
 function PublicationCard({ publication, featured = false }) {
   return (
     <article className={`publication-card ${featured ? "featured" : ""}`}>
       <div className="publication-cover">
-  <img
-    src={publication.image}
-    alt={`${publication.title} book cover`}
-    className="publication-cover-image"
-  />
-</div>
-        <div className="cover-top">
-          <span className="cover-institution">SVKM'S NMIMS</span>
-          <span className="cover-campus">SHIRPUR CAMPUS</span>
-        </div>
-
-        <div className="cover-icon">
-          <BookIcon />
-        </div>
-
-        <div className="cover-title">
-          {publication.shortTitle || "CONFERENCE PUBLICATION"}
-        </div>
-
-        <div className="cover-subtitle">
-          {publication.shortTitle
-            ? "Digital Technology Vision 2030"
-            : "Next Generation Technologies"}
-        </div>
-
-        <div className="cover-bottom">
-          {publication.publicationYear || "Taylor & Francis"}
-        </div>
+        <img
+          src={publication.image}
+          alt={`${publication.title} book cover`}
+          className="publication-cover-image"
+          loading="lazy"
+        />
       </div>
 
       <div className="publication-content">
-        <span className="publication-label">{publication.label || "ISBN Proceedings"}</span>
+        <span className="publication-label">
+          {publication.label || "ISBN Proceedings"}
+        </span>
 
         <h3>{publication.title}</h3>
 
@@ -300,65 +257,22 @@ export default function PreviousProceedings() {
         }
 
         .publication-cover {
-  min-height: 310px;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f8fafc;
-  border-radius: 9px;
-  overflow: hidden;
-}
-
-.publication-cover-image {
-  display: block;
-  width: 100%;
-  height: 310px;
-  object-fit: contain;
-  border-radius: 5px;
-}
-
-        .cover-top {
+          min-height: 310px;
+          padding: 12px;
           display: flex;
-          flex-direction: column;
-          gap: 5px;
+          justify-content: center;
+          align-items: center;
+          background: #f8fafc;
+          border-radius: 9px;
+          overflow: hidden;
+        }
+
+        .publication-cover-image {
+          display: block;
           width: 100%;
-          color: #e9c47e;
-          font-size: 10px;
-          font-weight: 750;
-          letter-spacing: 1.5px;
-        }
-
-        .cover-campus {
-          color: rgba(255,255,255,.7);
-          font-size: 9px;
-        }
-
-        .cover-icon {
-          color: #e9c47e;
-          margin: 22px 0 12px;
-        }
-
-        .cover-title {
-          font-size: 25px;
-          font-weight: 800;
-          letter-spacing: 1px;
-        }
-
-        .cover-subtitle {
-          max-width: 220px;
-          margin-top: 10px;
-          color: rgba(255,255,255,.83);
-          font-size: 13px;
-          line-height: 1.5;
-        }
-
-        .cover-bottom {
-          margin-top: 24px;
-          color: #e9c47e;
-          font-size: 11px;
-          font-weight: 700;
-          letter-spacing: 1px;
+          height: 310px;
+          object-fit: contain;
+          border-radius: 5px;
         }
 
         .publication-content {
@@ -501,6 +415,10 @@ export default function PreviousProceedings() {
             min-height: 280px;
           }
 
+          .publication-cover-image {
+            height: 280px;
+          }
+
           .detail-row {
             grid-template-columns: 1fr;
             gap: 3px;
@@ -518,10 +436,11 @@ export default function PreviousProceedings() {
         }
       `}</style>
 
-      {/* Page Header */}
       <section className="pub-hero">
         <div className="pub-hero-inner">
-          <span className="pub-eyebrow">Research • Innovation • Collaboration</span>
+          <span className="pub-eyebrow">
+            Research • Innovation • Collaboration
+          </span>
           <h1>Previous Conference Publications</h1>
           <p>
             Explore publications associated with conferences and academic
@@ -532,7 +451,6 @@ export default function PreviousProceedings() {
       </section>
 
       <div className="pub-container">
-        {/* ICNGT-related publication */}
         <section className="pub-section">
           <div className="pub-section-heading">
             <span>ICNGT</span>
@@ -546,7 +464,6 @@ export default function PreviousProceedings() {
           <PublicationCard publication={publications.icngt} />
         </section>
 
-        {/* Other NMIMS Shirpur conference publication */}
         <section className="pub-section">
           <div className="pub-section-heading">
             <span>Other Conference Publications</span>
