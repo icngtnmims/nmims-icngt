@@ -491,6 +491,26 @@ export default function PreviousProceedings() {
             separately and is not identified as a previous edition of
             ICNGT.
           </div>
+          
+<div className="publication-actions">
+  <a
+    href="/documents/ICDTV-2030-Proceedings.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="view-proceedings"
+  >
+    View Proceedings
+  </a>
+
+  <a
+    href="/documents/ICDTV-2030-Proceedings.pdf"
+    download="ICDTV-2030-Proceedings.pdf"
+    className="download-proceedings"
+  >
+    Download PDF
+  </a>
+</div>
+
         </section>
       </div>
     </main>
