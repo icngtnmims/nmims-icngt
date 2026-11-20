@@ -51,15 +51,33 @@ const ArrowIcon = () => (
 );
 
 function PublicationCard({ publication, featured = false }) {
+  const primaryUrl = publication.url || publication.conferenceUrl;
+
   return (
     <article className={`publication-card ${featured ? "featured" : ""}`}>
       <div className="publication-cover">
-        <img
-          src={publication.image}
-          alt={`${publication.title} book cover`}
-          className="publication-cover-image"
-          loading="lazy"
-        />
+        {primaryUrl ? (
+          <a
+            href={primaryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`View ${publication.title}`}
+          >
+            <img
+              src={publication.image}
+              alt={`${publication.title} book cover`}
+              className="publication-cover-image"
+              loading="lazy"
+            />
+          </a>
+        ) : (
+          <img
+            src={publication.image}
+            alt={`${publication.title} book cover`}
+            className="publication-cover-image"
+            loading="lazy"
+          />
+        )}
       </div>
 
       <div className="publication-content">
@@ -67,7 +85,20 @@ function PublicationCard({ publication, featured = false }) {
           {publication.label || "ISBN Proceedings"}
         </span>
 
-        <h3>{publication.title}</h3>
+        <h3>
+          {primaryUrl ? (
+            <a
+              href={primaryUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              {publication.title}
+            </a>
+          ) : (
+            publication.title
+          )}
+        </h3>
 
         <p className="publication-description">
           {publication.description}
