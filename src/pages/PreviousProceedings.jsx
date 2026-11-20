@@ -409,6 +409,24 @@ export default function PreviousProceedings() {
             grid-template-columns: 1fr;
             gap: 24px;
             padding: 18px;
+            <div className="publication-actions">
+  <a
+    href="/documents/ICDTV-2030-Proceedings.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="view-proceedings"
+  >
+    View Proceedings
+  </a>
+
+  <a
+    href="/documents/ICDTV-2030-Proceedings.pdf"
+    download="ICDTV-2030-Proceedings.pdf"
+    className="download-proceedings"
+  >
+    Download PDF
+  </a>
+</div>
           }
 
           .publication-cover {
@@ -492,24 +510,7 @@ export default function PreviousProceedings() {
             ICNGT.
           </div>
           
-<div className="publication-actions">
-  <a
-    href="/documents/ICDTV-2030-Proceedings.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="view-proceedings"
-  >
-    View Proceedings
-  </a>
 
-  <a
-    href="/documents/ICDTV-2030-Proceedings.pdf"
-    download="ICDTV-2030-Proceedings.pdf"
-    className="download-proceedings"
-  >
-    Download PDF
-  </a>
-</div>
 
         </section>
       </div>
