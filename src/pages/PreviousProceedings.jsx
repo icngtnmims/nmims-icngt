@@ -9,6 +9,7 @@ const publications = {
       "Explore the publication on next-generation technologies and their applications in sustainable development.",
     url: "https://www.taylorfrancis.com/books/edit/10.1201/9781003716648/next-generation-technologies-sustainable-development-sunita-patil-shyam-pancholi-girdhari-lal-gupta-preeti-sangave",
     label: "Taylor & Francis Publication",
+    image: "/images/ICNGT-2025.jpg",
   },
 
   icdtv: {
@@ -27,6 +28,7 @@ const publications = {
     conferenceUrl: "https://icdtv.nmims.edu/",
     reportUrl:
       "https://engineering-shirpur.nmims.edu/wp-content/uploads/2025/01/ICDTV-2030-Report-for-website_compressed-1.pdf",
+    image: "/images/ICDTV-2030-cover.png",
   },
 };
 
@@ -75,6 +77,12 @@ function PublicationCard({ publication, featured = false }) {
   return (
     <article className={`publication-card ${featured ? "featured" : ""}`}>
       <div className="publication-cover">
+  <img
+    src={publication.image}
+    alt={`${publication.title} book cover`}
+    className="publication-cover-image"
+  />
+</div>
         <div className="cover-top">
           <span className="cover-institution">SVKM'S NMIMS</span>
           <span className="cover-campus">SHIRPUR CAMPUS</span>
@@ -292,20 +300,23 @@ export default function PreviousProceedings() {
         }
 
         .publication-cover {
-          min-height: 310px;
-          padding: 25px 22px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          text-align: center;
-          color: #fff;
-          border-radius: 9px;
-          background:
-            radial-gradient(circle at 80% 20%, rgba(255,255,255,.15), transparent 32%),
-            linear-gradient(145deg, #163d62, #0b2540);
-          box-shadow: 0 12px 24px rgba(10,35,59,.2);
-        }
+  min-height: 310px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.publication-cover-image {
+  display: block;
+  width: 100%;
+  height: 310px;
+  object-fit: contain;
+  border-radius: 5px;
+}
 
         .cover-top {
           display: flex;
