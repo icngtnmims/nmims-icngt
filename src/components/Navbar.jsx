@@ -156,14 +156,31 @@ const Navbar = () => {
               Call for Papers
             </Link>
           </li>
-          <li>
-            <Link
-              to="/publication"
-              className="hover:opacity-70 transition-opacity"
-            >
-              Publication
-            </Link>
-          </li>
+          <li className="relative group">
+  <span className="hover:opacity-70 transition-opacity cursor-pointer">
+    Publication
+  </span>
+
+  <ul className="absolute left-0 mt-0 w-64 bg-base-100 rounded-md z-20 shadow-lg py-2 transition-opacity transition-transform duration-150 ease-out transform -translate-y-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
+    <li>
+      <Link
+        to="/publication"
+        className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 rounded"
+      >
+        Publication Information
+      </Link>
+    </li>
+
+    <li>
+      <Link
+        to="/previous-proceedings"
+        className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 rounded"
+      >
+        Previous Conference Proceedings
+      </Link>
+    </li>
+  </ul>
+</li>
           <li>
             <Link
               to="/submission"
