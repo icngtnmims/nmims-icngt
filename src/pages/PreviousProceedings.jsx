@@ -409,17 +409,7 @@ export default function PreviousProceedings() {
             grid-template-columns: 1fr;
             gap: 24px;
             padding: 18px;
-            <div className="publication-actions">
- 
-
-  <a
-    href="/documents/ICDTV-2030-Proceedings.pdf"
-    download="ICDTV-2030-Proceedings.pdf"
-    className="download-proceedings"
-  >
-    Download PDF
-  </a>
-</div>
+           
           }
 
           .publication-cover {
