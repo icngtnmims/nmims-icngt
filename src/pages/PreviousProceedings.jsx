@@ -25,7 +25,7 @@ const publications = {
       "Dr. Venkatadri M., Dr. Preeti C. Sangave, Dr. Ritesh Dhanare and Prof. Dhananjay Joshi",
     description:
       "The conference brought together researchers and professionals to discuss digital technologies and their applications across healthcare, education, industry, agriculture and other emerging domains.",
-    proceedingsPdfUrl: "/documents/ICDTV-2030-Proceedings.pdf",
+    proceedingsPdfUrl: "/documment/ICDTV-2030-Proceedings.pdf",
     conferenceUrl: "https://icdtv.nmims.edu/",
     reportUrl:
       "https://engineering-shirpur.nmims.edu/wp-content/uploads/2025/01/ICDTV-2030-Report-for-website_compressed-1.pdf",
