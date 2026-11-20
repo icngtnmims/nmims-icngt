@@ -65,7 +65,7 @@ const Navbar = () => {
         <Link to="/publication">Publication Information</Link>
       </li>
       <li>
-        <Link to="/previous-proceedings">
+        <Link to="/previous-proceedings" target="_blank" rel="noopener noreferrer">
           Previous Conference Proceedings
         </Link>
       </li>
@@ -174,6 +174,8 @@ const Navbar = () => {
     <li>
       <Link
         to="/previous-proceedings"
+        target="_blank"
+        rel="noopener noreferrer"
         className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 rounded"
       >
         Previous Conference Proceedings
